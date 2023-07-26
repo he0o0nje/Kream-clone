@@ -114,17 +114,68 @@
 
     /*  */
     .banner_slide {
-      height: 640px;
-      background-color: cornflowerblue;
+      width: 100%;
+      height: 620px;
+      background-color: rgba(246, 255, 200, 0.7);
       border-top: 1px solid #dddddd;
+      text-align: center;
+    }
+
+    .banner_slide>img {
+      height: 100%;
     }
 
     /*  */
-    /* .shortcut_collection {} */
+    .shortcut_collection {
+      width: 1620px;
+      height: 380px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
+    .shortcut_items_wrap {
+      height: 400px;
+      text-align: center;
+    }
+
+    .shortcut_items_wrap>a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .shortcut_item {
+      display: inline-block;
+      width: 310px;
+      height: 180px;
+      margin: 4px 3px;
+    }
+
+    .shortcut_item_img_wrap {
+      width: 310px;
+      height: 130px;
+      border-radius: 10px;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .shortcut_item_img_wrap>img {
+      width: 100%;
+    }
+
+    .shortcut_item_title {
+      font-size: 17px;
+      margin-top: 6px;
+    }
+
+    /* .home_card_list {} */
 
     .home_products {
       width: 1620px;
       margin: 0 auto;
+    }
+
+    .title_wrap {
+      padding-top: 20px;
     }
 
     .title {
@@ -132,13 +183,8 @@
     }
 
     .sub_title {
-      margin: -17px 0 20px 15px;
+      margin: -19px 0 15px 15px;
       opacity: 0.4;
-    }
-
-    .porduct_list_wrap {
-      width: 1620px;
-      height: 1050px;
     }
 
     .item_inner {
@@ -147,20 +193,25 @@
     }
 
     .porduct_item {
-      width: 380px;
+      width: 390px;
       height: 500px;
-      margin: 10px;
+      margin: 3px;
       display: inline-block;
     }
 
+    .porduct_list_wrap {
+      width: 1620px;
+      height: 1050px;
+    }
+
     .porduct_item>div {
-      border-radius: 10px;
       overflow: hidden;
     }
 
     .porduct_item>div>a>img {
       background-color: #f7f7f7;
       width: 100%;
+      border-radius: 10px;
     }
 
     .brand {
@@ -171,6 +222,8 @@
     .name {
       margin-top: -20px;
     }
+
+    /* .price {} */
 
     .desc {
       margin-top: -15px;
@@ -207,7 +260,7 @@
   </script>
 </head>
 
-<body>
+<>
   <div class="header">
     <div class="header_top">
       <ul class="top_list">
@@ -240,10 +293,96 @@
       </ul>
     </nav>
   </div>
-  <div class="banner_slide"></div>
-  <div class="shortcut_collection"></div>
+  <div class="banner_slide">
+    <img src="img/banner.webp" alt="banner">
+  </div>
+  <div class="shortcut_collection">
+    <div class="shortcut_items_wrap">
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/a.webp" alt="draw">
+          </div>
+          <p class="shortcut_item_title">크림 드로우</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/b.webp" alt="pick">
+          </div>
+          <p class="shortcut_item_title">셀럽픽</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/c.webp" alt="man">
+          </div>
+          <p class="shortcut_item_title">남성 추천</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/d.webp" alt="woman">
+          </div>
+          <p class="shortcut_item_title">여성 추천</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/e.webp" alt="new">
+          </div>
+          <p class="shortcut_item_title">이번 주 신상</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/f.webp" alt="down">
+          </div>
+          <p class="shortcut_item_title">정가 아래</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/g.webp" alt="luxury">
+          </div>
+          <p class="shortcut_item_title">명품중고거래</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/h.webp" alt="report">
+          </div>
+          <p class="shortcut_item_title">상반기 리포트</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/i.webp" alt="benefit">
+          </div>
+          <p class="shortcut_item_title">7월 혜택모음</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/j.webp" alt="point">
+          </div>
+          <p class="shortcut_item_title">무조건 포인트!</p>
+        </div>
+      </a>
+    </div>
+  </div>
   <div class="home_card_list">
     <div class="home_products">
+      <hr style="opacity: 0.2;">
       <div class="title_wrap">
         <h2 class="title">Just Dropped</h2>
         <h3 class="sub_title">발매 상품</h3>
@@ -260,6 +399,6 @@
       </div>
     </div>
   </div>
-</body>
+  </body>
 
 </html>
