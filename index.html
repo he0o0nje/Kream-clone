@@ -1,49 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
-    <title>Just Dropped</title>
-    <style>
-      .box {
-        background-color: aquamarine;
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-      }
-    </style>
-    <script>
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+  <title>Just Dropped</title>
+  <style>
+    main {
+      width: 1620px;
+      margin: 0 auto;
+    }
+    main > h2 {
+      margin-left: 15px;
+    }
+    main > h3 {
+      margin: -17px 0 20px 15px;
+      opacity: 0.4;
+    }
+    section {
+      width: 1620px;
+      height: 1050px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    .box {
+      width: 380px;
+      height: 500px;
+      margin: 10px;
+      display: inline-block;
+    }
+    .box > div {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .box > div > a > img {
+      background-color: aliceblue;
+      width: 100%;
+    }
+    #title {
+      font-weight: bold;
+      margin-top: 2px;
+    }
+    #subtitle {
+      margin-top: -20px;
+    }
+    #comment {
+      margin-top: -15px;
+      opacity: 0.4;
+      font-size: 13px;
+    }
+  </style>
+  <script>
     $.ajax({
-        url: "./data1.json",
-        dataType: "json",
-        success: function (response) {
-          for (let i = 0; i < response.length; i++) {
-            let item = response[i];
-            let image = item["image"];
-            let title = item["title"];
-            let subtitle = item["subtitle"];
-            let price = item["price"];
-            let comment = item["comment"];
-            console.log(image, title, subtitle, price, comment);
-          }
+      type: "get",
+      url: "./data1.json",
+      dataType: "json",
+      success: function (response) {
+        for (let i = 0; i < response.length; i++) {
+          let image = response[i]["image"];
+          let title = response[i]["title"];
+          let subtitle = response[i]["subtitle"];
+          let price = response[i]["price"];
+          let comment = response[i]["comment"];
+
+          $(".box").eq(i).append('<div><a href="#">' + "<img src='" + image + "'/>" + '</a></div>');
+          $(".box").eq(i).append('<p id="title"><a href="#">' + title + "</a><h5>");
+          $(".box").eq(i).append('<p id="subtitle"><a href="#">' + subtitle + "</a></p>");
+          $(".box").eq(i).append('<h3 id="price"><a href="#">' + price + "</a></h3>");
+          $(".box").eq(i).append('<p id="comment"><a href="#">' + comment + "</a></p>");
         }
-      });
-    </script>
-  </head>
-  <body>
-    <h3>Just Dropped</h3>
-    <h4>발매 상품</h4>
-    <article>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </article>
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <main>
+    <h2>Just Dropped</h2>
+    <h3>발매 상품</h3>
+    <section>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
     </section>
-  
-  </body>
+  </main>
+</body>
+
 </html>
