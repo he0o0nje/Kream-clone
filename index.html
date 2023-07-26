@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <title>Just Dropped</title>
+    <style>
+      .box {
+        background-color: aquamarine;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+    </style>
+    <script>
+    $.ajax({
+        url: "./data1.json",
+        dataType: "json",
+        success: function (response) {
+          for (let i = 0; i < response.length; i++) {
+            let item = response[i];
+            let image = item["image"];
+            let title = item["title"];
+            let subtitle = item["subtitle"];
+            let price = item["price"];
+            let comment = item["comment"];
+            console.log(image, title, subtitle, price, comment);
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h3>Just Dropped</h3>
+    <h4>발매 상품</h4>
+    <article>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </article>
+    </section>
+  
+  </body>
+</html>
