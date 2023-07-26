@@ -6,47 +6,173 @@
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
   <title>Just Dropped</title>
   <style>
-    main {
+    /*  */
+    /* .header {} */
+
+    .header_top {
       width: 1620px;
+      height: 30px;
       margin: 0 auto;
     }
-    main > h2 {
-      margin-left: 15px;
+
+    .top_list {
+      float: right;
+      margin: 0;
     }
-    main > h3 {
-      margin: -17px 0 20px 15px;
-      opacity: 0.4;
+
+    .top_item {
+      margin: 1px 10px -5px 20px;
+      font-size: 14px;
+      opacity: 0.5;
     }
-    section {
-      width: 1620px;
-      height: 1050px;
-    }
-    a {
+
+    .top_link {
       text-decoration: none;
       color: #000;
     }
-    .box {
+
+    .header_main {
+      width: 1620px;
+      height: 80px;
+      margin: 0 auto;
+    }
+
+    .logo_box {
+      width: 200px;
+      height: 60px;
+      float: left;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* .logo {} */
+
+    .logo>img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+    }
+
+    /* .gnb {} */
+
+    .gnb_list {
+      float: right;
+    }
+
+    .gnb_item {
+      margin: 0 27px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .gnb_link {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .search_box {
+      width: 30px;
+      height: 30px;
+      margin: 2px 15px 0 30px;
+      float: right;
+      position: relative;
+    }
+
+    /* .btn_search {} */
+
+    .btn_search>img {
+      width: 100%;
+      position: absolute;
+    }
+
+    .tabs {
+      width: 1620px;
+      height: 30px;
+      margin: 6px auto;
+    }
+
+    /* .ul_tab {} */
+
+    .li_tab {
+      margin: 0 60px 0 -25px;
+      font-size: 19px;
+      font-weight: 500;
+    }
+
+    .tab {
+      text-decoration: none;
+      color: #000;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      float: left;
+    }
+
+    /*  */
+    .banner_slide {
+      height: 640px;
+      background-color: cornflowerblue;
+      border-top: 1px solid #dddddd;
+    }
+
+    /*  */
+    /* .shortcut_collection {} */
+
+    .home_products {
+      width: 1620px;
+      margin: 0 auto;
+    }
+
+    .title {
+      margin-left: 15px;
+    }
+
+    .sub_title {
+      margin: -17px 0 20px 15px;
+      opacity: 0.4;
+    }
+
+    .porduct_list_wrap {
+      width: 1620px;
+      height: 1050px;
+    }
+
+    .item_inner {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .porduct_item {
       width: 380px;
       height: 500px;
       margin: 10px;
       display: inline-block;
     }
-    .box > div {
+
+    .porduct_item>div {
       border-radius: 10px;
       overflow: hidden;
     }
-    .box > div > a > img {
-      background-color: aliceblue;
+
+    .porduct_item>div>a>img {
+      background-color: #f7f7f7;
       width: 100%;
     }
-    #title {
+
+    .brand {
       font-weight: bold;
       margin-top: 2px;
     }
-    #subtitle {
+
+    .name {
       margin-top: -20px;
     }
-    #comment {
+
+    .desc {
       margin-top: -15px;
       opacity: 0.4;
       font-size: 13px;
@@ -59,17 +185,22 @@
       dataType: "json",
       success: function (response) {
         for (let i = 0; i < response.length; i++) {
-          let image = response[i]["image"];
-          let title = response[i]["title"];
-          let subtitle = response[i]["subtitle"];
-          let price = response[i]["price"];
-          let comment = response[i]["comment"];
-
-          $(".box").eq(i).append('<div><a href="#">' + "<img src='" + image + "'/>" + '</a></div>');
-          $(".box").eq(i).append('<p id="title"><a href="#">' + title + "</a><h5>");
-          $(".box").eq(i).append('<p id="subtitle"><a href="#">' + subtitle + "</a></p>");
-          $(".box").eq(i).append('<h3 id="price"><a href="#">' + price + "</a></h3>");
-          $(".box").eq(i).append('<p id="comment"><a href="#">' + comment + "</a></p>");
+          let product = response[i]
+          let image = product["image"];
+          let title = product["title"];
+          let subtitle = product["subtitle"];
+          let price = product["price"];
+          let comment = product["comment"];
+          let temp_html = `<div>
+                            <a href="#" class="item_inner">
+                              <img src='${image}'/>
+                              <p class="brand">${title}<p>
+                              <p class="name">${subtitle}</p>
+                              <h3 class="price">${price}</h3>
+                              <p class="desc">${comment}</p>
+                            </a>
+                          </div>`
+          $(".porduct_item").eq(i).append(temp_html);
         }
       }
     });
@@ -77,20 +208,58 @@
 </head>
 
 <body>
-  <main>
-    <h2>Just Dropped</h2>
-    <h3>발매 상품</h3>
-    <section>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </section>
-  </main>
+  <div class="header">
+    <div class="header_top">
+      <ul class="top_list">
+        <li class="top_item"><a href="#" class="top_link">고객센터</a></li>
+        <li class="top_item"><a href="#" class="top_link">마이페이지</a></li>
+        <li class="top_item"><a href="#" class="top_link">관심상품</a></li>
+        <li class="top_item"><a href="#" class="top_link">알림</a></li>
+        <li class="top_item"><a href="#" class="top_link">로그인</a></li>
+      </ul>
+    </div>
+    <div class="header_main">
+      <div class="logo_box"><a href="#" class="logo"><img src="img/logo.jpg" alt="logo"></a></div>
+      <nav class="gnb">
+        <ul class="gnb_list">
+          <li class="gnb_item"><a href="#" class="gnb_link">HOME</a></li>
+          <li class="gnb_item"><a href="#" class="gnb_link">STYLE</a></li>
+          <li class="gnb_item"><a href="#" class="gnb_link">SHOP</a></li>
+          <div class="search_box"><a href="#" class="btn_search"><img src="img/search.png" alt="search"></a></div>
+        </ul>
+      </nav>
+    </div>
+    <nav class="tabs">
+      <ul class="ul_tab">
+        <li class="li_tab"><a href="#" class="tab">추천</a></li>
+        <li class="li_tab"><a href="#" class="tab">랭킹</a></li>
+        <li class="li_tab"><a href="#" class="tab">럭셔리</a></li>
+        <li class="li_tab"><a href="#" class="tab">남성</a></li>
+        <li class="li_tab"><a href="#" class="tab">여성</a></li>
+        <li class="li_tab"><a href="#" class="tab">발견</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="banner_slide"></div>
+  <div class="shortcut_collection"></div>
+  <div class="home_card_list">
+    <div class="home_products">
+      <div class="title_wrap">
+        <h2 class="title">Just Dropped</h2>
+        <h3 class="sub_title">발매 상품</h3>
+      </div>
+      <div class="porduct_list_wrap">
+        <div class="porduct_item"></div>
+        <div class="porduct_item"></div>
+        <div class="porduct_item"></div>
+        <div class="porduct_item"></div>
+        <div class="porduct_item" style="opacity: 1;"></div>
+        <div class="porduct_item" style="opacity: 1;"></div>
+        <div class="porduct_item" style="opacity: 1;"></div>
+        <div class="porduct_item" style="opacity: 1;"></div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
