@@ -130,8 +130,20 @@
       padding: 50px 0;
     }
 
+    .shortcut_collection_hot {
+      width: 1620px;
+      height: 690px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
     .shortcut_items_wrap {
       height: 400px;
+      text-align: center;
+    }
+
+    .shortcut_collection_hot>.shortcut_items_wrap {
+      height: 570px;
       text-align: center;
     }
 
@@ -232,7 +244,7 @@
     .btn_plus::marker {
       font-size: 0;
     }
-    
+
     .btn_plus {
       color: #555;
       width: 125px;
@@ -298,320 +310,321 @@
     });
   </script>
 </head>
-<div class="header">
-  <div class="header_top">
-    <ul class="top_list">
-      <li class="top_item"><a href="#" class="top_link">고객센터</a></li>
-      <li class="top_item"><a href="#" class="top_link">마이페이지</a></li>
-      <li class="top_item"><a href="#" class="top_link">관심상품</a></li>
-      <li class="top_item"><a href="#" class="top_link">알림</a></li>
-      <li class="top_item"><a href="#" class="top_link">로그인</a></li>
-    </ul>
-  </div>
-  <div class="header_main">
-    <div class="logo_box"><a href="#" class="logo"><img src="img/logo.jpg" alt="logo"></a></div>
-    <nav class="gnb">
-      <ul class="gnb_list">
-        <li class="gnb_item"><a href="#" class="gnb_link">HOME</a></li>
-        <li class="gnb_item"><a href="#" class="gnb_link">STYLE</a></li>
-        <li class="gnb_item"><a href="#" class="gnb_link">SHOP</a></li>
-        <div class="search_box"><a href="#" class="btn_search"><img src="img/search.png" alt="search"></a></div>
+
+<body style="margin: 7px 0 0 0;">
+  <div class="header">
+    <div class="header_top">
+      <ul class="top_list">
+        <li class="top_item"><a href="#" class="top_link">고객센터</a></li>
+        <li class="top_item"><a href="#" class="top_link">마이페이지</a></li>
+        <li class="top_item"><a href="#" class="top_link">관심상품</a></li>
+        <li class="top_item"><a href="#" class="top_link">알림</a></li>
+        <li class="top_item"><a href="#" class="top_link">로그인</a></li>
+      </ul>
+    </div>
+    <div class="header_main">
+      <div class="logo_box"><a href="#" class="logo"><img src="img/logo.jpg" alt="logo"></a></div>
+      <nav class="gnb">
+        <ul class="gnb_list">
+          <li class="gnb_item"><a href="#" class="gnb_link">HOME</a></li>
+          <li class="gnb_item"><a href="#" class="gnb_link">STYLE</a></li>
+          <li class="gnb_item"><a href="#" class="gnb_link">SHOP</a></li>
+          <div class="search_box"><a href="#" class="btn_search"><img src="img/search.png" alt="search"></a></div>
+        </ul>
+      </nav>
+    </div>
+    <nav class="tabs">
+      <ul class="ul_tab">
+        <li class="li_tab"><a href="#" class="tab">추천</a></li>
+        <li class="li_tab"><a href="#" class="tab">랭킹</a></li>
+        <li class="li_tab"><a href="#" class="tab">럭셔리</a></li>
+        <li class="li_tab"><a href="#" class="tab">남성</a></li>
+        <li class="li_tab"><a href="#" class="tab">여성</a></li>
+        <li class="li_tab"><a href="#" class="tab">발견</a></li>
       </ul>
     </nav>
   </div>
-  <nav class="tabs">
-    <ul class="ul_tab">
-      <li class="li_tab"><a href="#" class="tab">추천</a></li>
-      <li class="li_tab"><a href="#" class="tab">랭킹</a></li>
-      <li class="li_tab"><a href="#" class="tab">럭셔리</a></li>
-      <li class="li_tab"><a href="#" class="tab">남성</a></li>
-      <li class="li_tab"><a href="#" class="tab">여성</a></li>
-      <li class="li_tab"><a href="#" class="tab">발견</a></li>
-    </ul>
-  </nav>
-</div>
-<div class="banner_slide">
-  <img src="img/banner.webp" alt="banner">
-</div>
-<div class="shortcut_collection">
-  <div class="shortcut_items_wrap">
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/a.webp" alt="draw">
-        </div>
-        <p class="shortcut_item_title">크림 드로우</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/b.webp" alt="pick">
-        </div>
-        <p class="shortcut_item_title">셀럽픽</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/c.webp" alt="man">
-        </div>
-        <p class="shortcut_item_title">남성 추천</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/d.webp" alt="woman">
-        </div>
-        <p class="shortcut_item_title">여성 추천</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/e.webp" alt="new">
-        </div>
-        <p class="shortcut_item_title">이번 주 신상</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/f.webp" alt="down">
-        </div>
-        <p class="shortcut_item_title">정가 아래</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/g.webp" alt="luxury">
-        </div>
-        <p class="shortcut_item_title">명품중고거래</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/h.webp" alt="report">
-        </div>
-        <p class="shortcut_item_title">상반기 리포트</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/i.webp" alt="benefit">
-        </div>
-        <p class="shortcut_item_title">7월 혜택모음</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/j.webp" alt="point">
-        </div>
-        <p class="shortcut_item_title">무조건 포인트!</p>
-      </div>
-    </a>
+  <div class="banner_slide">
+    <img src="img/banner.webp" alt="banner">
   </div>
-</div>
-<div class="home_card_list">
-  <div class="home_products">
+  <div class="shortcut_collection">
+    <div class="shortcut_items_wrap">
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/a.webp" alt="draw">
+          </div>
+          <p class="shortcut_item_title">크림 드로우</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/b.webp" alt="pick">
+          </div>
+          <p class="shortcut_item_title">셀럽픽</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/c.webp" alt="man">
+          </div>
+          <p class="shortcut_item_title">남성 추천</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/d.webp" alt="woman">
+          </div>
+          <p class="shortcut_item_title">여성 추천</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/e.webp" alt="new">
+          </div>
+          <p class="shortcut_item_title">이번 주 신상</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/f.webp" alt="down">
+          </div>
+          <p class="shortcut_item_title">정가 아래</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/g.webp" alt="luxury">
+          </div>
+          <p class="shortcut_item_title">명품중고거래</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/h.webp" alt="report">
+          </div>
+          <p class="shortcut_item_title">상반기 리포트</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/i.webp" alt="benefit">
+          </div>
+          <p class="shortcut_item_title">7월 혜택모음</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/j.webp" alt="point">
+          </div>
+          <p class="shortcut_item_title">무조건 포인트!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="home_card_list">
+    <div class="home_products">
+      <hr style="opacity: 0.2;">
+      <div class="title_wrap">
+        <h2 class="title">Just Dropped</h2>
+        <h3 class="sub_title">발매 상품</h3>
+      </div>
+      <div class="product_list_wrap">
+        <div class="product_item"></div>
+        <div class="product_item"></div>
+        <div class="product_item"></div>
+        <div class="product_item"></div>
+        <details>
+          <summary class="btn_plus">더보기</summary>
+          <div class="plus_item">
+            <div class="product_item"></div>
+            <div class="product_item"></div>
+            <div class="product_item"></div>
+            <div class="product_item"></div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div class="shortcut_collection_hot">
     <hr style="opacity: 0.2;">
     <div class="title_wrap">
-      <h2 class="title">Just Dropped</h2>
-      <h3 class="sub_title">발매 상품</h3>
+      <h2 class="title">Top 15 Brand</h2>
+      <h3 class="sub_title">인기 탑 15 브랜드</h3>
     </div>
-    <div class="product_list_wrap">
-      <div class="product_item"></div>
-      <div class="product_item"></div>
-      <div class="product_item"></div>
-      <div class="product_item"></div>
-      <details>
-        <summary class="btn_plus">더보기</summary>
-        <div class="plus_item">
-          <div class="product_item"></div>
-          <div class="product_item"></div>
-          <div class="product_item"></div>
-          <div class="product_item"></div>
+    <div class="shortcut_items_wrap">
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/스투시.webp" alt="draw">
+          </div>
+          <p class="shortcut_item_title">스투시</p>
         </div>
-      </details>
-    </div>
-  </div>
-</div>
-<div class="shortcut_collection">
-  <hr style="opacity: 0.2;">
-  <div class="title_wrap">
-    <h2 class="title">Top 15 Brand</h2>
-    <h3 class="sub_title">인기 탑 15 브랜드</h3>
-  </div>
-  <div class="shortcut_items_wrap">
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/스투시.webp" alt="draw">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/코스.webp" alt="pick">
+          </div>
+          <p class="shortcut_item_title">코스</p>
         </div>
-        <p class="shortcut_item_title">스투시</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/코스.webp" alt="pick">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/나이키.webp" alt="man">
+          </div>
+          <p class="shortcut_item_title">나이키</p>
         </div>
-        <p class="shortcut_item_title">코스</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/나이키.webp" alt="man">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/아이앱.webp" alt="woman">
+          </div>
+          <p class="shortcut_item_title">아이앱 스튜디오</p>
         </div>
-        <p class="shortcut_item_title">나이키</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/아이앱.webp" alt="woman">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/조던.webp" alt="new">
+          </div>
+          <p class="shortcut_item_title">조던</p>
         </div>
-        <p class="shortcut_item_title">아이앱 스튜디오</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/조던.webp" alt="new">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/애플.webp" alt="down">
+          </div>
+          <p class="shortcut_item_title">애플</p>
         </div>
-        <p class="shortcut_item_title">조던</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/애플.webp" alt="down">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/아미.webp" alt="luxury">
+          </div>
+          <p class="shortcut_item_title">아미</p>
         </div>
-        <p class="shortcut_item_title">애플</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/아미.webp" alt="luxury">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/아디다스.webp" alt="report">
+          </div>
+          <p class="shortcut_item_title">아디다스</p>
         </div>
-        <p class="shortcut_item_title">아미</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/아디다스.webp" alt="report">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/살로몬.webp" alt="benefit">
+          </div>
+          <p class="shortcut_item_title">살로몬</p>
         </div>
-        <p class="shortcut_item_title">아디다스</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/살로몬.webp" alt="benefit">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/슈프림.webp" alt="point">
+          </div>
+          <p class="shortcut_item_title">슈프림</p>
         </div>
-        <p class="shortcut_item_title">살로몬</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/슈프림.webp" alt="point">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/뉴발란스.webp" alt="point">
+          </div>
+          <p class="shortcut_item_title">뉴발란스</p>
         </div>
-        <p class="shortcut_item_title">슈프림</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/뉴발란스.webp" alt="point">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/야스히로.webp" alt="point">
+          </div>
+          <p class="shortcut_item_title">야스히로</p>
         </div>
-        <p class="shortcut_item_title">뉴발란스</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/야스히로.webp" alt="point">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/아크테릭스.webp" alt="point">
+          </div>
+          <p class="shortcut_item_title">아크테릭스</p>
         </div>
-        <p class="shortcut_item_title">야스히로</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/아크테릭스.webp" alt="point">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/메종키츠네.webp" alt="point">
+          </div>
+          <p class="shortcut_item_title">메종 키츠네</p>
         </div>
-        <p class="shortcut_item_title">아크테릭스</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/메종키츠네.webp" alt="point">
+      </a>
+      <a href="#">
+        <div class="shortcut_item">
+          <div class="shortcut_item_img_wrap">
+            <img src="img/아식스.webp" alt="point">
+          </div>
+          <p class="shortcut_item_title">아식스</p>
         </div>
-        <p class="shortcut_item_title">메종 키츠네</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="shortcut_item">
-        <div class="shortcut_item_img_wrap">
-          <img src="img/아식스.webp" alt="point">
-        </div>
-        <p class="shortcut_item_title">아식스</p>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="banner_slide" style="margin-top: 310px; background-color: #f5f5f5;">
-  <img src="img/ban1.webp" alt="banner">
-</div>
-<div class="home_card_list">
-  <div class="home_products">
-    <div class="title_wrap">
-      <h2 class="title">Most Popular</h2>
-      <h3 class="sub_title">인기 상품</h3>
-    </div>
-    <div class="product_list_wrap">
-      <div class="product_item_hot"></div>
-      <div class="product_item_hot"></div>
-      <div class="product_item_hot"></div>
-      <div class="product_item_hot"></div>
-      <details>
-        <summary class="btn_plus">더보기</summary>
-        <div class="plus_item">
-          <div class="product_item_hot"></div>
-          <div class="product_item_hot"></div>
-          <div class="product_item_hot"></div>
-          <div class="product_item_hot"></div>
-        </div>
-      </details>
+      </a>
     </div>
   </div>
-</div>
-<div class="footer">
-  <hr style="opacity: 0.2; width: 68%; margin: 45px auto 45px auto; ">
-  <div class="footer_inner">
-    <div class="footer_menu">
-      <div class="menu_box">
+  <div class="banner_slide" style="background-color: #f5f5f5;">
+    <img src="img/ban1.webp" alt="banner">
+  </div>
+  <div class="home_card_list">
+    <div class="home_products">
+      <div class="title_wrap">
+        <h2 class="title">Most Popular</h2>
+        <h3 class="sub_title">인기 상품</h3>
+      </div>
+      <div class="product_list_wrap">
+        <div class="product_item_hot"></div>
+        <div class="product_item_hot"></div>
+        <div class="product_item_hot"></div>
+        <div class="product_item_hot"></div>
+        <details>
+          <summary class="btn_plus">더보기</summary>
+          <div class="plus_item">
+            <div class="product_item_hot"></div>
+            <div class="product_item_hot"></div>
+            <div class="product_item_hot"></div>
+            <div class="product_item_hot"></div>
+          </div>
+        </details>
       </div>
     </div>
-    <div class="customer_menu">
+  </div>
+  <div class="footer">
+    <hr style="opacity: 0.2; width: 68%; margin: 45px auto 45px auto; ">
+    <div class="footer_inner">
+      <div class="footer_menu">
+        <div class="menu_box">
+        </div>
+      </div>
+      <div class="customer_menu">
 
+      </div>
+      <div class="corporation_area">
+        <ul>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="corporation_area">
-    <ul>
-    </ul>
-  </div>
-</div>
 
 </body>
 
