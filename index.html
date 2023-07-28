@@ -27,6 +27,7 @@
       margin: 1px 40px -5px -20px;
       font-size: 11px;
       opacity: 0.5;
+      float: left;
     }
 
     .top_link {
@@ -66,6 +67,7 @@
       margin: 0 20px;
       font-size: 18px;
       font-weight: 500;
+      float: left;
     }
 
     .gnb_link {
@@ -98,6 +100,7 @@
       margin: 0 30px 0 0px;
       font-size: 15px;
       font-weight: 500;
+      float: left;
     }
 
     .tab {
@@ -107,10 +110,6 @@
 
     ul {
       list-style: none;
-    }
-
-    li {
-      float: left;
     }
 
     /*  */
@@ -133,15 +132,24 @@
       padding: 32px 0;
     }
 
+    .shortcut_collection_hot::before {
+      content: "";
+      width: 1200px;
+      border-top: 1px solid #ebebeb;
+      margin-left: 40px;
+      position: absolute;
+    }
+
     .shortcut_collection_hot {
       width: 1280px;
-      height: 550px;
+      height: 560px;
       margin: 0 auto;
-      padding: 35px 0;
+      padding: 35px 0 0 0;
+      position: relative;
     }
 
     .shortcut_items_wrap {
-      height: 400px;
+      height: 300px;
       text-align: center;
     }
 
@@ -184,13 +192,19 @@
       content: "";
       width: 1200px;
       border-top: 1px solid #ebebeb;
+      text-align: center;
       position: absolute;
     }
+
     .home_products {
       width: 1280px;
-      margin: 20px auto;
-      padding: 40px;
+      margin: 30px auto;
       position: relative;
+    }
+
+    .home_products_hot {
+      width: 1280px;
+      margin: 30px auto;
     }
 
     .title_wrap {
@@ -206,7 +220,7 @@
       margin: -16px 0 15px 0px;
       opacity: 0.4;
     }
-    
+
     .item_inner {
       text-decoration: none;
       color: #000;
@@ -214,16 +228,18 @@
 
     .product_item {
       width: 294px;
-      height: 294px;
-      margin: 1px;
+      height: 408px;
       display: inline-block;
+      vertical-align: middle;
+      margin-left: 1.5px;
     }
 
     .product_item_hot {
       width: 294px;
-      height: 294px;
-      margin: 1px;
+      height: 408px;
       display: inline-block;
+      vertical-align: middle;
+      margin-left: 1.5px;
     }
 
     .product_list_wrap {
@@ -231,14 +247,17 @@
       margin: 0;
     }
 
-    .item_box {
+    .item_img {
+      width: 294px;
+      height: 294px;
+      border-radius: 10px;
       overflow: hidden;
+      display: inline-block;
     }
 
-    .item_box>a>img {
+    .item_img>img {
       background-color: #f7f7f7;
       width: 100%;
-      border-radius: 10px;
     }
 
     .brand {
@@ -255,6 +274,7 @@
     .price {
       font-size: 14px;
     }
+
     .desc {
       margin-top: -15px;
       opacity: 0.4;
@@ -279,10 +299,81 @@
 
     /*  */
     .footer {
+      background-color: red;
       width: 1280px;
       height: 543px;
+      margin: 0 auto;
+      padding: 50px 40px;
     }
 
+    .footer_inner {
+      background-color: orange;
+      width: 1200px;
+      height: 442px;
+    }
+
+    .service_area {
+      background-color: blue;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 56px;
+      border-bottom: 1px solid #ebebeb;
+    }
+
+    .footer_menu {
+      background-color: yellow;
+      width: 400px;
+      height: 147px;
+      display: flex;
+    }
+
+    .menu_box {
+      background-color: green;
+      width: 160px;
+      height: 147px;
+    }
+
+    .menu_title {
+      font-size: 16px;
+      letter-spacing: -.16px;
+    }
+
+    .menu_list {
+      padding-top: 16px;
+      list-style: none;
+      margin: 0;
+      padding: 16px 0 0 0;
+    }
+
+    .menu_item {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: list-item;
+    }
+
+    .menu_item+.menu_item {
+      margin-top: 12px;
+    }
+
+    .menu_link {
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: -.21px;
+      color: rgba(34, 34, 34, .5);
+      text-decoration: none;
+      list-style: none;
+    }
+
+    .customer_service {
+      background-color: yellow;
+      width: 267px;
+      height: 147px;
+      margin: 0;
+      padding: 0;
+    }
   </style>
   <script>
     $.ajax({
@@ -297,9 +388,11 @@
           let subtitle = product["subtitle"];
           let price = product["price"];
           let comment = product["comment"];
-          let temp_html = `<div class="item_box">
+          let temp_html = `<div>
                             <a href="#" class="item_inner">
-                              <img src='${image}'/>
+                              <div class="item_img">
+                                <img src='${image}'/>
+                              </div>
                               <p class="brand">${title}<p>
                               <p class="name">${subtitle}</p>
                               <h3 class="price">${price}</h3>
@@ -322,9 +415,11 @@
           let subtitle = product["subtitle"];
           let price = product["price"];
           let comment = product["comment"];
-          let temp_html = `<div class="item_box">
+          let temp_html = `<div>
                             <a href="#" class="item_inner">
-                              <img src='${image}'/>
+                              <div class="item_img">
+                                <img src='${image}'/>
+                              </div>
                               <p class="brand">${title}<p>
                               <p class="name">${subtitle}</p>
                               <h3 class="price">${price}</h3>
@@ -374,7 +469,7 @@
   <div class="banner_slide">
     <img src="img/banner/banner.webp" alt="banner">
   </div>
-  <div class="shortcut_collection">
+  <div class="shortcut_collection" style="background-color: pink;">
     <div class="shortcut_items_wrap">
       <a href="#">
         <div class="shortcut_item">
@@ -458,30 +553,29 @@
       </a>
     </div>
   </div>
-    <div class="home_products">
-      <div class="title_wrap">
-        <h2 class="title">Just Dropped</h2>
-        <h3 class="sub_title">발매 상품</h3>
-      </div>
-      <div class="product_list_wrap">
-        <div class="product_item"></div>
-        <div class="product_item"></div>
-        <div class="product_item"></div>
-        <div class="product_item"></div>
-        <details>
-          <summary class="btn_plus">더보기</summary>
-          <div class="plus_item">
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-          </div>
-        </details>
-      </div>
-    </div>
-  <div class="shortcut_collection_hot">
-    <hr style="opacity: 0.2;">
+  <div class="home_products" style="background-color: pink;">
     <div class="title_wrap">
+      <h2 class="title">Just Dropped</h2>
+      <h3 class="sub_title">발매 상품</h3>
+    </div>
+    <div class="product_list_wrap">
+      <div class="product_item"></div>
+      <div class="product_item"></div>
+      <div class="product_item"></div>
+      <div class="product_item"></div>
+      <details>
+        <summary class="btn_plus">더보기</summary>
+        <div class="plus_item">
+          <div class="product_item"></div>
+          <div class="product_item"></div>
+          <div class="product_item"></div>
+          <div class="product_item"></div>
+        </div>
+      </details>
+    </div>
+  </div>
+  <div class="shortcut_collection_hot" style="background-color: pink;">
+    <div class="title_wrap" style="margin-left: 40px;">
       <h2 class="title">Top 15 Brand</h2>
       <h3 class="sub_title">인기 탑 15 브랜드</h3>
     </div>
@@ -608,41 +702,47 @@
       </a>
     </div>
   </div>
-  <div class="banner_slide" style="background-color: #f5f5f5;">
+  <div class="banner_slide" style="background-color: #efefef;">
     <img src="img/banner/ban1.webp" alt="banner">
   </div>
-  <div class="home_card_list">
-    <div class="home_products">
-      <div class="title_wrap">
-        <h2 class="title">Most Popular</h2>
-        <h3 class="sub_title">인기 상품</h3>
-      </div>
-      <div class="product_list_wrap">
-        <div class="product_item_hot"></div>
-        <div class="product_item_hot"></div>
-        <div class="product_item_hot"></div>
-        <div class="product_item_hot"></div>
-        <details>
-          <summary class="btn_plus">더보기</summary>
-          <div class="plus_item">
-            <div class="product_item_hot"></div>
-            <div class="product_item_hot"></div>
-            <div class="product_item_hot"></div>
-            <div class="product_item_hot"></div>
-          </div>
-        </details>
-      </div>
+  <div class="home_products_hot" style="background-color: pink;">
+    <div class="title_wrap">
+      <h2 class="title">Most Popular</h2>
+      <h3 class="sub_title">인기 상품</h3>
+    </div>
+    <div class="product_list_wrap">
+      <div class="product_item_hot"></div>
+      <div class="product_item_hot"></div>
+      <div class="product_item_hot"></div>
+      <div class="product_item_hot"></div>
+      <details>
+        <summary class="btn_plus">더보기</summary>
+        <div class="plus_item">
+          <div class="product_item_hot"></div>
+          <div class="product_item_hot"></div>
+          <div class="product_item_hot"></div>
+          <div class="product_item_hot"></div>
+        </div>
+      </details>
     </div>
   </div>
   <div class="footer">
-    <hr style="opacity: 0.2; width: 68%; margin: 45px auto 45px auto; ">
     <div class="footer_inner">
-      <div class="footer_menu">
-        <div class="menu_box">
+      <div class="service_area">
+        <div class="footer_menu">
+          <div class="menu_box">
+            <strong class="menu_title">이용안내</strong>
+            <ul class="menu_list">
+              <li class="menu_item"><a href="#" class="menu_link">검수기준</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">이용정책</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">페널티 정책</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">커뮤니티 가이드라인</a></li>
+          </div>
+          <div class="menu_box" style="margin-left: 80px;">
+          </div>
         </div>
-      </div>
-      <div class="customer_menu">
-
+        <div class="customer_service">
+        </div>
       </div>
       <div class="corporation_area">
         <ul>
