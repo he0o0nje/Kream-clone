@@ -1,55 +1,55 @@
 [
   {
-    "image": "./img/1a.webp",
+    "image": "./img/product/1a.webp",
     "title": "Starbucks",
     "subtitle": "Starbucks x Blackpink SS Linestone Cold Cup 473ml",
     "price": "190,000원",
     "comment": "즉시구매가"
   },
   {
-    "image": "./img/1b.webp",
+    "image": "./img/product/1b.webp",
     "title": "Nike",
     "subtitle": "Nike Air Force 1 '07 Mid Light Bone and Phantom",
     "price": "185,000원",
     "comment": "즉시구매가"
   },
   {
-    "image": "./img/1c.webp",
+    "image": "./img/product/1c.webp",
     "title": "Human Made",
     "subtitle": "Human Made Peanuts T-Shirt #2 White",
     "price": "285,000원",
     "comment": "즉시구매가"
   },
   {
-    "image": "./img/1d.webp",
+    "image": "./img/product/1d.webp",
     "title": "Jordan",
     "subtitle": "Jordan 1 Retro High OG University Blue",
     "price": "223,000원",
     "comment": "즉시구매가"
   },
   {
-    "image": "./img/1e.webp",
+    "image": "./img/product/1e.webp",
     "title": "Jordan",
     "subtitle": "Jordan 1 Low Kkachi",
     "price": "159,000원",
     "comment": "즉시구매가"
   },
   {
-    "image": "./img/1f.webp",
+    "image": "./img/product/1f.webp",
     "title": "Stussy",
     "subtitle": "Stussy x Sean Paul T-Shirt Black",
     "price": "76,000원",
     "comment": "즉시구매가"
   },
   {
-    "image": "./img/1g.webp",
+    "image": "./img/product/1g.webp",
     "title": "Hoka",
     "subtitle": "Hoka Hopara White",
     "price": "204,000원",
     "comment": "즉시구매가"
   },
   {
-    "image": "./img/1h.webp",
+    "image": "./img/product/1h.webp",
     "title": "Darkr8m Studio",
     "subtitle": "Darkr8m Studio x New Era FFALO Figure Black",
     "price": "31,000원",
