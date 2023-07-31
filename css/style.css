@@ -260,7 +260,7 @@ ul {
 .footer {
   width: 1210px;
   height: 450px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 50px 40px;
   border-top: 1px solid #ebebeb;
 }
@@ -440,18 +440,18 @@ ul {
 .notice_guarantee {
   width: 1200px;
   height: 72px;
-  padding: 40px 0 0px;
+  padding: 35px 0 0px;
 }
 .notice_guarantee > .title {
   font-weight: 700;
   font-size: 11px;
-  letter-spacing: -0.06px;
+  letter-spacing: -0.5px;
 }
 .description {
   margin-top: -8px;
   color: rgba(34, 34, 34, 0.5);
   font-size: 11px;
-  letter-spacing: -0.06px;
+  letter-spacing: -0.2px;
 }
 .description > a {
   margin-left: 4px;
@@ -461,15 +461,15 @@ ul {
 .notice_area {
   width: 1200px;
   height: 54px;
-  padding-top: 6px;
+  padding-top: 7px;
   display: flex;
   align-items: flex-end;
   margin-top: -15px;
 }
 .notice {
-  max-width: 653px;
+  max-width: 640px;
   font-size: 11px;
-  letter-spacing: -0.06px;
+  letter-spacing: -0.2px;
   color: rgba(34, 34, 34, 0.4);
 }
 .copyright {
