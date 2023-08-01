@@ -5,8 +5,8 @@
   <meta charset="utf-8" />
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
   <title>KREAM</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- <link href="css/reset.css" rel="stylesheet"> -->
+  <link href="./css/style.css" rel="stylesheet">
+  <!-- <link href="./css/reset.css" rel="stylesheet"> -->
   <script>
     $.ajax({
       type: "get",
@@ -59,6 +59,33 @@
                             </a>
                           </div>`
           $(".product_item_hot").eq(i).append(temp_html);
+        }
+      }
+    });
+    $.ajax({
+      type: "get",
+      url: "./data3.json",
+      dataType: "json",
+      success: function (response) {
+        for (let i = 0; i < response.length; i++) {
+          let product = response[i]
+          let image = product["image"];
+          let title = product["title"];
+          let subtitle = product["subtitle"];
+          let price = product["price"];
+          let comment = product["comment"];
+          let temp_html = `<div>
+                            <a href="#" class="item_inner">
+                              <div class="item_img">
+                                <img src='${image}'/>
+                              </div>
+                              <p class="brand">${title}<p>
+                              <p class="name">${subtitle}</p>
+                              <h3 class="price">${price}</h3>
+                              <p class="desc">${comment}</p>
+                            </a>
+                          </div>`
+          $(".product_item_new").eq(i).append(temp_html);
         }
       }
     });
@@ -444,6 +471,30 @@
       </div>
     </div>
   </div>
+  <div class="banner_slide" style="background-color: rgb(168, 155, 155);">
+    <img src="img/banner/ban2.webp" alt="banner">
+  </div>
+  <div class="home_products_hot">
+    <div class="title_wrap">
+      <h2 class="title">New In</h2>
+      <h3 class="sub_title">신규 등록 상품</h3>
+    </div>
+    <div class="product_list_wrap">
+      <div class="product_item_new"></div>
+      <div class="product_item_new"></div>
+      <div class="product_item_new"></div>
+      <div class="product_item_new"></div>
+      <details>
+        <summary class="btn_plus">더보기</summary>
+        <div class="plus_item">
+          <div class="product_item_new"></div>
+          <div class="product_item_new"></div>
+          <div class="product_item_new"></div>
+          <div class="product_item_new"></div>
+        </div>
+      </details>
+    </div>
+  </div>
   <div class="footer">
     <div class="footer_inner">
       <div class="service_area">
@@ -520,6 +571,7 @@
       </div>
     </div>
   </div>
+  
 </body>
 
 </html>
