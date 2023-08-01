@@ -208,6 +208,13 @@ ul {
   vertical-align: middle;
   margin-left: 1.5px;
 }
+.product_item_new {
+  width: 294px;
+  height: 408px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.5px;
+}
 .product_list_wrap {
   width: 1200px;
   margin: 0 auto;
