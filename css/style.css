@@ -249,7 +249,7 @@ ul {
   border: 1px solid #ccc;
   border-radius: 13px;
   text-align: center;
-  margin: 14px auto;
+  margin: 0 auto;
   padding: 11px 0px;
   font-size: 13px;
   cursor: pointer;
@@ -269,10 +269,8 @@ ul {
   margin: 40px auto 56px;
   max-width: 1280px;
   height: 341px;
-  background-color: red;
 }
 .container_title {
-  background-color: orange;
   padding: 0 40px 0 40px;
   margin: 0 auto 16px;
   display: flex;
@@ -281,7 +279,6 @@ ul {
   max-width: 1280px;
 }
 .slide_title_wrap {
-  background-color: yellow;
   flex: 1;
 }
 .slide_title {
@@ -291,7 +288,6 @@ ul {
 }
 /* .style_content {} */
 .style_slide {
-  background-color: green;
   padding: 0 40px;
   height: 264px;
 }
@@ -299,7 +295,7 @@ ul {
   overflow: hidden;
   height: 264px;
 }
-.slick_track {
+/* .slick_track {
   width: 6000px;
   opacity: 1;
   transform: translate3d(-1200px, 0, 0);
@@ -307,6 +303,90 @@ ul {
   grid-gap: 4px;
   gap: 4px;
   height: 264px;
+} */
+/* .slick_slide {
+  outline: none;
+  width: 200px;
+} */
+.style_card {
+  width: 195px;
+  height: 260px;
+  display: inline-block;
+}
+.card_link {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-top: 132.6530612245%;
+  border-radius: 10px;
+  outline-width: 0;
+  outline: none;
+  text-decoration: none;
+}
+.card_link::after {
+  border: 1px solid #f0f0f0;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent 30%);
+  border-radius: inherit;
+}
+.img_card {
+  padding: 1px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translate((-50%, -50%)); */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+  /* vertical-align: top; */
+  /* overflow-clip-margin: content-box; */
+  /* overflow: clip; */
+}
+.profile_img_box {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  z-index: 10;
+  overflow: hidden;
+}
+.profile_img_box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #fff;
+  border-radius: inherit;
+}
+.profile_img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+.bottom_left {
+  display: flex;
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #fff;
+  z-index: 1;
 }
 
 /*  */
