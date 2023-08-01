@@ -82,12 +82,12 @@
   width: 1210px;
   height: 450px;
   margin: 40px auto;
-  padding: 50px 40px;
+  padding: 50px 40px 10px;
   border-top: 1px solid #ebebeb;
 }
 .footer_inner {
   width: 1200px;
-  height: 442px;
+  height: 450px;
   margin: 0 auto;
 }
 .service_area {
