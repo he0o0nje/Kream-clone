@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 /*  */
+ul {
+  list-style: none;
+}
 .header {
   position: fixed;
   top: 0;
