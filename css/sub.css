@@ -23,12 +23,10 @@
     padding-right: 3.334%;
 }
 .column {
-    background-color: limegreen;
     width: 560px;
     height: 560px;
 }
 .column_box {
-    background-color: turquoise;
     width: 560px;
     height: 560px;
     position: fixed;
@@ -63,18 +61,15 @@
     border-left: 1px solid #ebebeb;
 }
 .column_right {
-    background-color: cadetblue;
     width: 560px;
     height: 2000px;
     margin-top: -15px;
 }
 .column_top {
-    background-color: burlywood;
     width: 560px;
     height: 333px;
 }
 .main_title_box {
-    background-color: darksalmon;
     position: relative;
     width: 560px;
     height: 73px;
@@ -110,7 +105,6 @@
     padding: 0;
 }
 .product_figure_wrap {
-    background-color: cornflowerblue;
     width: 560px;
     height: 111px;
 }
@@ -149,13 +143,11 @@
     vertical-align: top;
 }
 .dropdown_icon {
-    background-color: slateblue ;
     vertical-align: top;
     width: 25px;
     height: 27px;
 }
 .datail_price {
-    background-color: darkorange;
     width: 560px;
     height: 44px;
     margin-top: 11px;
@@ -179,17 +171,16 @@
     font-weight: 700;
     font-size: 0;
 }
-.datail_price .num {
+.datail_price .num, .datail_price .won {
     display: inline-block;
     line-height: 26px;
     vertical-align: top;
+}
+.datail_price .num {
     font-size: 20px;
     letter-spacing: -.1px;
 }
 .datail_price .won {
-    display: inline-block;
-    line-height: 26px;
-    vertical-align: top;
     font-size: 18px;
     letter-spacing: -.27px;
 }
@@ -210,4 +201,103 @@
     margin-bottom: -6px;
     border: 5px solid transparent;
     border-top-color: #31b46e;
+}
+.btn_wrap {
+    background-color: violet;
+    width: 560px;
+    height: 132px;
+}
+.division_btn_box {
+    background-color: skyblue;
+    display: flex;
+    height: 60px;
+    margin-top: 17px;
+}
+.btn_division {
+    overflow: hidden!important;
+    position: absolute!important;
+    clip: rect(0,0,0,0)!important;
+    width: 1px!important;
+    height: 1px!important;
+    margin: -1px!important;
+    text-decoration: none;
+}
+.division_btn_box .btn_action {
+    position: relative;
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    outline: none;
+    background: none;
+}
+.division_btn_box .btn_action:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 55px;
+    width: 1px;
+    background-color: rgba(34,34,34,.1);
+}
+.division_btn_box .title {
+    width: 55px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: -.27px;
+    font-weight: bold;
+}
+.division_btn_box .price {
+    text-align: left;
+    margin-left: 10px;
+    line-height: 15px;
+}
+.division_btn_box .amount {
+    display: block;
+    font-size: 0;
+}
+.division_btn_box .num, .division_btn_box .won {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+}
+.division_btn_box .num {
+    font-size: 15px;
+    font-style: normal;
+}
+.division_btn_box .won {
+    font-size: 14px;
+    letter-spacing: -.21px;
+}
+.division_btn_box .desc {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: hsla(0,0%,100%,.8);
+}
+.division_btn_box .btn_action+.btn_action {
+    margin-left: 10px;
+}
+.btn_wish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    color: #333;
+    height: 60px;
+    width: 100%;
+    line-height: 58px;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -.16px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
 }
