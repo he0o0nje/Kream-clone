@@ -1,3 +1,213 @@
 @charset "utf-8";
 
 /*  */
+.container_home {
+    margin-top: 80px;
+}
+.content {
+    margin: 0 auto;
+    max-width: 1280px;
+    overflow: hidden;
+    padding: 50px 75px 120px;
+}
+.column_bind {
+    position: relative;
+}
+.column_bind::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.column:first-child {
+    float: left;
+    padding-right: 3.334%;
+}
+.column {
+    background-color: limegreen;
+    width: 560px;
+    height: 560px;
+}
+.column_box {
+    background-color: turquoise;
+    width: 560px;
+    height: 560px;
+    position: fixed;
+    top: 130px;
+}
+.product {
+    background-color: rgb(246, 238, 237);
+    overflow: hidden;
+    position: relative;
+    height: 560px;
+}
+.pro_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.column:nth-child(2) {
+    position: relative;
+    float: right;
+    padding-left: 3.17%;
+    height: 2000px;
+}
+.column:nth-child(2):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-left: 1px solid #ebebeb;
+}
+.column_right {
+    background-color: cadetblue;
+    width: 560px;
+    height: 2000px;
+    margin-top: -15px;
+}
+.column_top {
+    background-color: burlywood;
+    width: 560px;
+    height: 333px;
+}
+.main_title_box {
+    background-color: darksalmon;
+    position: relative;
+    width: 560px;
+    height: 73px;
+}
+.brand {
+    border-bottom: 2px solid #222;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 19px;
+    padding-top: 1px;
+    margin-bottom: 9px;
+    font-size: 18px;
+    letter-spacing: -.27px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #222;
+}
+.title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    letter-spacing: -.09px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.sub_title {
+    line-height: 17px;
+    font-size: 14px;
+    letter-spacing: -.15px;
+    color: rgba(34,34,34,.5);
+    margin: 0;
+    padding: 0;
+}
+.product_figure_wrap {
+    background-color: cornflowerblue;
+    width: 560px;
+    height: 111px;
+}
+.detail_size {
+    width: 560px;
+    height: 24px;
+    padding-top: 19px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ebebeb;
+}
+.detail_size .title {
+    float: left;
+}
+.detail_size .title_txt {
+    padding-top: 4px;
+    display: inline-block;
+    line-height: 16px;
+    font-size: 12px;
+    letter-spacing: -.07px;
+    color: rgba(34,34,34,.8);
+}
+.size {
+    float: right;
+}
+.btn_size {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -1.6px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+.btn_text {
+    display: inline-block;
+    vertical-align: top;
+}
+.dropdown_icon {
+    background-color: slateblue ;
+    vertical-align: top;
+    width: 25px;
+    height: 27px;
+}
+.datail_price {
+    background-color: darkorange;
+    width: 560px;
+    height: 44px;
+    margin-top: 11px;
+    min-height: 44px;
+}
+.datail_price .title {
+    float: left;
+}
+.datail_price .title_txt {
+    padding-top: 5px;
+    display: inline-block;
+    font-size: 12px;
+    color: rgba(34,34,34,.8);
+}
+.datail_price .price {
+    float: right;
+    padding-top: 2px;
+    text-align: right;
+}
+.datail_price .amount {
+    font-weight: 700;
+    font-size: 0;
+}
+.datail_price .num {
+    display: inline-block;
+    line-height: 26px;
+    vertical-align: top;
+    font-size: 20px;
+    letter-spacing: -.1px;
+}
+.datail_price .won {
+    display: inline-block;
+    line-height: 26px;
+    vertical-align: top;
+    font-size: 18px;
+    letter-spacing: -.27px;
+}
+.datail_price .decrease {
+    color: #31b46e;
+    position: relative;
+    padding-top: 1px;
+    padding-left: 17px;
+    font-size: 13px;
+    margin: -13px 0 0 0;
+    padding: 0;
+}
+.datail_price .decrease:before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    margin-bottom: -6px;
+    border: 5px solid transparent;
+    border-top-color: #31b46e;
+}
