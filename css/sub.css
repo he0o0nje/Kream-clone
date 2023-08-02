@@ -6,25 +6,20 @@
 }
 .content {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1200px;
     overflow: hidden;
-    padding: 50px 75px 120px;
+    padding: 30px 40px 120px;
 }
 .column_bind {
     position: relative;
-}
-.column_bind::after {
-    content: "";
-    display: block;
-    clear: both;
+    margin-top: 6px;
 }
 .column:first-child {
     float: left;
     padding-right: 3.334%;
 }
 .column {
-    width: 560px;
-    height: 560px;
+    width: 50%;
 }
 .column_box {
     width: 560px;
@@ -48,7 +43,8 @@
 .column:nth-child(2) {
     position: relative;
     float: right;
-    padding-left: 3.17%;
+    padding-left: 3.334%;
+    margin-right: -40px;
     height: 2000px;
 }
 .column:nth-child(2):before {
@@ -63,7 +59,6 @@
 .column_right {
     width: 560px;
     height: 2000px;
-    margin-top: -15px;
 }
 .column_top {
     width: 560px;
@@ -287,7 +282,7 @@
     border: 1px solid #ebebeb;
     border-radius: 10px;
     color: #333;
-    height: 60px;
+    height: 58px;
     width: 100%;
     line-height: 58px;
     margin-top: 12px;
@@ -300,12 +295,12 @@
     background-color: #fff;
 }
 .btn_wish img {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
 }
 .btn_wish .btn_text {
     margin-left: 4px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: normal;
     line-height: 58px;
@@ -313,7 +308,7 @@
 }
 .btn_wish .wish_count_num {
     margin-left: 4px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: normal;
     line-height: 58px;
