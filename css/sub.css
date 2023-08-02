@@ -203,12 +203,10 @@
     border-top-color: #31b46e;
 }
 .btn_wrap {
-    background-color: violet;
     width: 560px;
     height: 132px;
 }
 .division_btn_box {
-    background-color: skyblue;
     display: flex;
     height: 60px;
     margin-top: 17px;
@@ -300,4 +298,24 @@
     text-align: center;
     text-decoration: none;
     background-color: #fff;
+}
+.btn_wish img {
+    width: 20px;
+    height: 20px;
+}
+.btn_wish .btn_text {
+    margin-left: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 58px;
+    color: #333;
+}
+.btn_wish .wish_count_num {
+    margin-left: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 58px;
+    color: #333;
 }
