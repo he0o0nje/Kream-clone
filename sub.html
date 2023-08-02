@@ -215,6 +215,164 @@
                             <img src="./img/sub/banner.webp" alt="banner">
                         </a>
                     </div>
+                    <div class="datail wrap">
+                        <div class="product_sales_graph">
+                            <div class="title">
+                                <h3 class="detail_title"> 시세 </h3>
+                                <div class="sales_filter">
+                                    <div class="filter_unit">
+                                        <button class="btn_select">
+                                            <span class="select_text">모든 사이즈</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap_sales">
+                                <div class="tab_area">
+                                    <ul class="tab_list">
+                                        <li class="item">
+                                            <a href="#" class="item_link">1개월</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="item_link">3개월</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="item_link">6개월</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="item_link">1년</a>
+                                        </li>
+                                        <li class="item on">
+                                            <a href="#" class="item_link">전체</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab_content">
+                                        <div class="graph">
+                                            <canvas id="1" height="0"
+                                                style="display: block; box-sizing: border-box; height: 0px; width: 0px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <div class="graph">
+                                            <canvas id="2" height="0"
+                                                style="display: block; box-sizing: border-box; height: 0px; width: 0px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <div class="graph">
+                                            <canvas id="3" height="0"
+                                                style="display: block; box-sizing: border-box; height: 0px; width: 0px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <div class="graph">
+                                            <canvas id="4" height="0"
+                                                style="display: block; box-sizing: border-box; height: 0px; width: 0px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content show">
+                                        <div class="graph">
+                                            <canvas id="5" width="560" height="200"
+                                                style="display: block; box-sizing: border-box; height: 200px; width: 560px;"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap_bids">
+                                <div class="tab_area">
+                                    <ul class="tab_list">
+                                        <li class="item on">
+                                            <a href="#" class="item_link">체결 거래</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="item_link">판매 입찰</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="item_link">구매 입찰</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab_content show">
+                                        <div class="table_wrap">
+                                            <table>
+                                                <caption>
+                                                    <span class="blind">데이터 테이블</span>
+                                                </caption>
+                                                <colgroup>
+                                                    <col style="width: 29.76%;">
+                                                    <col style="width: 36.52%;">
+                                                    <col style="width: 33.72%;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr class="table_th"> 사이즈 </tr>
+                                                    <tr class="table_th align_rigit"> 거래가 </tr>
+                                                    <tr class="table_th align_rigit"> 거래일 </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="table_td"> 270 </td>
+                                                        <td class="table_td align_right"> 1,532,000원
+                                                            <i class="express_icon">
+                                                                <img src="./img/sub/quick.png" alt="express_icon">
+                                                                <span class="blind">빠른배송</span>
+                                                            </i>
+                                                        </td>
+                                                        <td class="table_td align_right"> 23/08/02 </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table_td"> 270 </td>
+                                                        <td class="table_td align_right"> 1,532,000원
+                                                            <i class="express_icon">
+                                                                <img src="./img/sub/quick.png" alt="express_icon">
+                                                                <span class="blind">빠른배송</span>
+                                                            </i>
+                                                        </td>
+                                                        <td class="table_td align_right"> 23/08/02 </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table_td"> 270 </td>
+                                                        <td class="table_td align_right"> 1,535,000원
+                                                            <i class="express_icon">
+                                                                <img src="./img/sub/quick.png" alt="express_icon">
+                                                                <span class="blind">빠른배송</span>
+                                                            </i>
+                                                        </td>
+                                                        <td class="table_td align_right"> 23/08/02 </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table_td"> 270 </td>
+                                                        <td class="table_td align_right"> 1,533,000원
+                                                            <i class="express_icon">
+                                                                <img src="./img/sub/quick.png" alt="express_icon">
+                                                                <span class="blind">빠른배송</span>
+                                                            </i>
+                                                        </td>
+                                                        <td class="table_td align_right"> 23/08/02 </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table_td"> 270 </td>
+                                                        <td class="table_td align_right"> 1,535,000원
+                                                            <i class="express_icon">
+                                                                <img src="./img/sub/quick.png" alt="express_icon">
+                                                                <span class="blind">빠른배송</span>
+                                                            </i>
+                                                        </td>
+                                                        <td class="table_td align_right"> 23/08/02 </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <a href="#" class="btn_outlinegrey"> 체결 내역 더보기 </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layer_alert_login"></div>
+                        </div>
+                        <div>
+                            <div class="confirm_wrap"></div>
+                            <div class="point_quide"></div>
+                            <p class="meditaion_notice_product"></p>
+                        </div>
+                    </div>
                     <!-- </div> -->
                 </div>
             </div>

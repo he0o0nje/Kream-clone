@@ -425,7 +425,7 @@ em {
   margin: 0;
   padding: 0;
 }
-.detail_title {
+.delivery_way_wrap .detail_title {
   line-height: 17px;
   font-size: 12px;
   letter-spacing: -0.21px;
@@ -513,4 +513,197 @@ em {
 .banner_link img {
   width: 100%;
   height: 100%;
+}
+.product_sales_graph {
+    position: relative;
+}
+.product_sales_graph .title {
+    display: flex;
+}
+.detail_title {
+    line-height: 22px;
+    padding: 40px 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -.15px;
+    margin: 0;
+}
+.sales_filter {
+    position: relative;
+    margin-left: auto;
+    padding: 40px 0 20px;
+    font-size: 0;
+}
+.filter_unit {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.btn_select {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+    font-size: 13px;
+    letter-spacing: -.07px;
+    color: rgba(34,34,34,.8);
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+    border-radius: 0;
+}
+.select_text {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 24px;
+    
+}
+.select_text:after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 24px;
+    height: 24px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggc3Ryb2tlPSIjQkJCIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE4IDlsLTYgNi02LTYiLz48L3N2Zz4=) 0 0 no-repeat;
+    background-size: 24px 24px;
+}
+.wrap_sales {
+    position: relative;
+}
+.tab_area {
+    position: relative;
+}
+.tab_area .tab_list {
+    display: flex;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+.tab_list .item {
+    flex: 1;
+    margin: 2px;
+    display: list-item;
+}
+.tab_area .item {
+    flex: 1;
+    margin: 2px;
+}
+.tab_area .item_link {
+    display: block;
+    line-height: 16px;
+    padding: 7px 0 9px;
+    font-size: 13px;
+    letter-spacing: -.07px;
+    letter-spacing: -.05px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    color: rgba(34,34,34,.8);
+}
+.on .item_link {
+    background-color: #fff;
+    color: #222;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 0.5px #ebebeb;
+}
+.tab_content {
+    overflow: hidden;
+    display: none;
+}
+.graph {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show {
+    display: block;
+    height: auto;
+}
+.wrap_bids {
+    position: relative;
+}
+.table_wrap {
+    padding: 21px 0 20px;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0;
+    border: 0;
+    border-collapse: collapse;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+.blind {
+    overflow: hidden!important;
+    position: absolute!important;
+    clip: rect(0,0,0,0)!important;
+    width: 1px!important;
+    height: 1px!important;
+    margin: -1px!important;
+}
+.table_th {
+    line-height: 14px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 12px;
+    letter-spacing: -.06px;
+    color: rgba(34,34,34,.5);
+    font-weight: 400;
+    text-align: left;
+}
+.align_right {
+    text-align: right;
+}
+.table_td {
+    line-height: 17px;
+    padding-top: 9px;
+    font-size: 14px;
+}
+.table_td .express_icon {
+    position: absolute;
+    right: -13px;
+    top: auto;
+    margin-top: 4px;
+}
+.express_icon {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+}
+.express_icon > img {
+    width: 10px;
+    height: 10px;
+}
+.btn_outlinegrey{
+    border: 1px solid #d3d3d3;
+    color: rgba(34,34,34,.8);
+    font-weight: 400;
+    padding: 0 18px;
+    width: 100%;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 14px;
+    letter-spacing: -.14px;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+}
+.layer_alert_login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0,0%,100%,.8);
 }
