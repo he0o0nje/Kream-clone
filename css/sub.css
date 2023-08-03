@@ -637,8 +637,6 @@ table {
     border: 0;
     border-collapse: collapse;
     color: #222;
-    margin: 0;
-    padding: 0;
 }
 .blind {
     overflow: hidden!important;
@@ -660,6 +658,9 @@ table {
 }
 .align_right {
     text-align: right;
+}
+.table_td:nth-child(2) {
+  position: relative;
 }
 .table_td {
     line-height: 17px;
