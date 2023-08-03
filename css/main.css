@@ -6,9 +6,11 @@
   height: 44px;
   margin: 23px auto -14px auto;
 }
-/* .ul_tab {} */
+.ul_tab {
+  margin-left: 40px;
+}
 .li_tab {
-  margin: 0 30px 0 0px;
+  margin: 0 26px 0 0px;
   font-size: 15px;
   font-weight: 500;
   float: left;
