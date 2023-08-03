@@ -767,12 +767,52 @@ table {
 }
 .dropdown .title {
   max-width: 320px;
-    font-size: 15px;
-    letter-spacing: -.15px;
+  font-size: 15px;
+  letter-spacing: -0.15px;
 }
 .dropdown img {
   margin: 0 4px 0 auto;
-    flex-shrink: 0;
-    width: 14px;
-    height: 8px;
+  flex-shrink: 0;
+  width: 14px;
+  height: 8px;
+}
+.point_guide {
+  padding-top: 40px;
+}
+.guide_list .guide_item {
+  overflow: hidden;
+}
+.guide_list .guide_item .thumb_area {
+  float: left;
+  width: 40px;
+  margin-right: 14px;
+}
+.guide_list .guide_item .thumb_area img {
+  width: 100%;
+  vertical-align: top;
+}
+.guide_list .guide_item .thumb_area .text_area {
+  overflow: hidden;
+}
+.guide_list .guide_item .title {
+  display: block;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+.guide_list .guide_item .desc {
+  margin-top: 1px;
+  line-height: 16px;
+  font-size: 13px;
+  letter-spacing: normal;
+  color: rgba(34, 34, 34, 0.5);
+}
+.meditaion_notice_product {
+  padding-top: 40px;
+  line-height: 16px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 12px;
+  letter-spacing: -.05px;
+  color: rgba(34, 34, 34, 0.5);
 }
