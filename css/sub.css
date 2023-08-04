@@ -1191,3 +1191,16 @@ table {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.more_btn_box {
+  text-align: center;
+}
+.btn_more {
+  padding: 0 30px;
+  border: 1px solid #d3d3d3;
+  color: rgba(34, 34, 34, 0.8);
+  border-radius: 12px;
+  font-size: 13px;
+  height: 42px;
+  letter-spacing: -0.14px;
+  cursor: pointer;
+}
