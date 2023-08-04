@@ -1194,7 +1194,7 @@ table {
 .more_btn_box {
   text-align: center;
 }
-.btn_more {
+.more_btn_box .btn_more {
   padding: 0 30px;
   border: 1px solid #d3d3d3;
   color: rgba(34, 34, 34, 0.8);
