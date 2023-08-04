@@ -1,0 +1,62 @@
+[
+  {
+    "image": "./img/sub/quick/q1.webp",
+    "title": "New Balance",
+    "subtitle": "New Balance 2002R Grey",
+    "price": "122,000"
+  },
+  {
+    "image": "./img/sub/quick/q2.webp",
+    "title": "Adidas",
+    "subtitle": "Adidas Superstar Core Black White",
+    "price": "105,000"
+  },
+  {
+    "image": "./img/sub/quick/q3.webp",
+    "title": "Adidas",
+    "subtitle": "Adidas Yeezy Slide Bone 2022/2023",
+    "price": "140,000"
+  },
+  {
+    "image": "./img/sub/quick/q4.webp",
+    "title": "Jordan",
+    "subtitle": "Jordan 1 x Travis Scott Retro Low OG SP Black Phantom",
+    "price": "122,000"
+  },
+  {
+    "image": "./img/sub/quick/q5.webp",
+    "title": "Adidas",
+    "subtitle": "(W) Adidas Gazelle Indoor Blue Fusion Cloud White",
+    "price": "122,000"
+  },
+  {
+    "image": "./img/sub/quick/q6.webp",
+    "title": "Adidas",
+    "subtitle": "(W) Adidas Gazelle Bold Pink Glow Victory Blue",
+    "price": "212,000"
+  },
+  {
+    "image": "./img/sub/quick/q7.webp",
+    "title": "Salomon",
+    "subtitle": "Salomon XT-6 Lunar Rock Dark Sapphire",
+    "price": "212,000"
+  },
+  {
+    "image": "./img/sub/quick/q8.webp",
+    "title": "Jordan",
+    "subtitle": "(W) Jordan 1 x Travis Scott Retro Low OG SP Medium Olive",
+    "price": "460,000"
+  },
+  {
+    "image": "./img/sub/quick/q9.webp",
+    "title": "Converse",
+    "subtitle": "Converse x Ader Error Chuck 70 Ox Imperial Blue",
+    "price": "214,000"
+  },
+  {
+    "image": "./img/sub/quick/q10.webp",
+    "title": "Jordan",
+    "subtitle": "Jordan 1 Low Kkachi",
+    "price": "160,000"
+  }
+]

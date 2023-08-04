@@ -280,7 +280,7 @@ em {
 .division_btn_box .btn_action + .btn_action {
   margin-left: 10px;
 }
-.btn_wish {
+.btn_wrap .btn_wish {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -863,6 +863,7 @@ table {
   margin: 20px 0;
   flex: 0 0 auto;
   display: inline-block;
+  vertical-align: top;
 }
 .stock_list_item .item_inner {
   display: block;
@@ -993,4 +994,197 @@ table {
 }
 .other_product_area .product_list {
   padding: 0 30px;
+}
+.translated_name {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 2px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.action_wish_review {
+  padding-top: 12px;
+  column-gap: 12px;
+  display: flex;
+}
+.action_wish_review > span {
+  align-items: center;
+  display: inline-flex;
+}
+.wish_figure .btn_wish {
+  display: flex;
+  height: inherit;
+  cursor: pointer;
+}
+.wish_figure .btn_wish img {
+  width: 16px;
+  height: 16px;
+}
+.action_wish_review .text {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 12px;
+  letter-spacing: -0.06px;
+  margin-left: 4px;
+}
+.action_wish_review .review_figure .review_link {
+  display: inline-flex;
+  cursor: pointer;
+}
+.review_figure .review_link img {
+  width: 15px;
+  height: 15px;
+}
+.normal_exhibitions {
+  margin: 0 300px;
+  max-width: 1280px;
+  padding: 0 32px 40px;
+}
+.detail_exhibition_wrap {
+  margin: 60px 0 0;
+  padding: 40px 0 0;
+  border-top: 1px solid #ebebeb;
+  overflow: auto;
+  white-space: nowrap;
+}
+.detail_item_title_box {
+  display: flex;
+  justify-content: space-between;
+}
+.detail_item_title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  margin-bottom: 17px;
+}
+.detail_exhibitions {
+  padding-bottom: 10px;
+  display: inline-block;
+  overflow-x: auto;
+}
+.detail_exhibition_item {
+  display: block;
+  margin-right: 20px;
+  color: #222;
+}
+.detail_exhibition_item img {
+  border-radius: 10px;
+  height: 157px;
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  border: none;
+  display: flex;
+}
+.detail_exhibition_item .detail_exhibition_title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+.detail_exhibition_item .detail_exhibition_desc {
+  color: rgba(34, 34, 34, 0.8);
+  font-size: 13px;
+  margin-top: 4px;
+}
+.feed_area {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-bottom: 60px;
+}
+.feed_area .social_feeds {
+  margin: 0 40px;
+  padding: 24px 0 0;
+}
+.masonry_feed {
+  position: relative;
+  height: 843px;
+}
+.feed_card {
+  display: inline-block;
+  width: 294px;
+  margin-right: 1px;
+}
+.feed_card > a {
+  display: block;
+  position: relative;
+  color: #222;
+}
+.social_img_box {
+  border-radius: 10px;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+  width: 279px;
+}
+.social_img_box > img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: none;
+  display: flex;
+}
+.feed_area .card_detail {
+  padding: 0 4px 0;
+}
+.user_box {
+  align-items: center;
+  display: flex;
+}
+.profile_box {
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  border-radius: 50%;
+  height: 28px;
+  overflow: hidden;
+  width: 28px;
+  display: flex;
+}
+.img_profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user_name {
+  color: rgba(34, 34, 34, 0.8);
+  flex: 1;
+  font-size: 15px;
+  letter-spacing: -0.15px;
+  padding: 0 6px 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.btn_like {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  color: rgba(34, 34, 34, 0.5);
+  display: flex;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.btn_like img {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+}
+.like_count {
+  padding-left: 3px;
+}
+.text_box {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  font-size: 12px;
+  letter-spacing: -0.21px;
+  line-height: 20px;
+  margin-top: -4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

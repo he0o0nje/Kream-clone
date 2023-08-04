@@ -4,9 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
     <title>Sub</title>
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/sub.css" rel="stylesheet">
+    <script>
+        $.ajax({
+            type: "get",
+            url: "./sub1.json",
+            dataType: "json",
+            success: function (response) {
+                for (let i = 0; i < response.length; i++) {
+                    let exhibition = response[i]
+                    let image = exhibition["image"];
+                    let title = exhibition["title"];
+                    let desc = exhibition["desc"];
+                    let temp_html = `<a href="#" class="detail_exhibition_item">
+                                <img src='${image}'>
+                                <p class="detail_exhibition_title">${title}</p>
+                                <p class="detail_exhibition_desc">${desc}</p>
+                            </a>`
+                    $(".detail_exhibitions").eq(i).append(temp_html);
+                }
+            }
+        });
+        $.ajax({
+            type: "get",
+            url: "./sub2.json",
+            dataType: "json",
+            success: function (response) {
+                for (let i = 0; i < response.length; i++) {
+                    let exhibition = response[i]
+                    let image = exhibition["image"];
+                    let title = exhibition["title"];
+                    let subtitle = exhibition["subtitle"];
+                    let price = exhibition["price"];
+                    let temp_html = `<a href="#" class="item_inner">
+                                    <div class="product_thumb">
+                                        <img src="${image}" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_detail">
+                                            <p class="size">${title}</p>
+                                            <p class="name">${subtitle}</p>
+                                            <span class="express_mark">빠른배송</span>
+                                        </div>
+                                        <div class="product_price">
+                                            <p class="discount_price">
+                                                <span class="amount">${price}</span>
+                                                <span class="won">원</span>
+                                            </p>
+                                            <p class="price_desc">즉시 구매가</p>
+                                        </div>
+                                    </div>
+                                </a>`
+                    $(".stock2").eq(i).append(temp_html);
+                }
+            }
+        });
+    </script>
 </head>
 
 <body style="margin: 0; padding: 0;">
@@ -604,6 +660,105 @@
                     </div>
                 </div>
                 <div class="feed_area">
+                    <h3 class="more_title">
+                        <span class="title_txt">스타일 2745</span>
+                    </h3>
+                    <div class="social_feeds">
+                        <div class="masonry_feed">
+                            <div class="feed_card">
+                                <a href="#">
+                                    <div class="social_img_box">
+                                        <img src="./img/sub/review/1.png" alt="">
+                                    </div>
+                                    <div class="card_detail">
+                                        <div class="user_box">
+                                            <div class="profile_box">
+                                                <img src="./img/sub/review/1.1.png" alt="" class="img_profile">
+                                            </div>
+                                            <p class="user_name">9z7290</p>
+                                            <span class="btn_like">
+                                                <img src="./img/sub/like.png" alt="">
+                                                <span class="like_count">14</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feed_card">
+                                <a href="#">
+                                    <div class="social_img_box">
+                                        <img src="./img/sub/review/2.png" alt="">
+                                    </div>
+                                    <div class="card_detail">
+                                        <div class="user_box">
+                                            <div class="profile_box">
+                                                <img src="./img/sub/review/2.2.webp" alt="" class="img_profile">
+                                            </div>
+                                            <p class="user_name">easy_won</p>
+                                            <span class="btn_like">
+                                                <img src="./img/sub/like.png" alt="">
+                                                <span class="like_count">22</span>
+                                            </span>
+                                        </div>
+                                        <p class="text_box">돈값하는 최애 코디2</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feed_card">
+                                <a href="#">
+                                    <div class="social_img_box">
+                                        <img src="./img/sub/review/3.png" alt="">
+                                    </div>
+                                    <div class="card_detail">
+                                        <div class="user_box">
+                                            <div class="profile_box">
+                                                <img src="./img/sub/review/3.3.webp" alt="" class="img_profile">
+                                            </div>
+                                            <p class="user_name">jjjjun.h</p>
+                                            <span class="btn_like">
+                                                <img src="./img/sub/like.png" alt="">
+                                                <span class="like_count">29</span>
+                                            </span>
+                                        </div>
+                                        <p class="text_box">#휴가코디 #썸머스타일 #outfit #오늘뭐신지 #폭염패션 #캐피탈</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feed_card">
+                                <a href="#">
+                                    <div class="social_img_box">
+                                        <img src="./img/sub/review/4.png" alt="">
+                                    </div>
+                                    <div class="card_detail">
+                                        <div class="user_box">
+                                            <div class="profile_box">
+                                                <img src="./img/sub/review/4.4.webp" alt="" class="img_profile">
+                                            </div>
+                                            <p class="user_name">junn2</p>
+                                            <span class="btn_like">
+                                                <img src="./img/sub/like.png" alt="">
+                                                <span class="like_count">21</span>
+                                            </span>
+                                        </div>
+                                        <p class="text_box">#휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈 #블랙코디 #휴먼메이드 #humanmade
+                                            #supreme #travisscottjordan1 #stussy #porter</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="normal_exhibitions">
+                    <div class="detail_exhibition_wrap">
+                        <div class="detail_item_title_box">
+                            <p class="detail_item_title"> 관련 기획전 </p>
+                        </div>
+                        <div class="detail_exhibitions"></div>
+                        <div class="detail_exhibitions"></div>
+                        <div class="detail_exhibitions"></div>
+                        <div class="detail_exhibitions"></div>
+                        <div class="detail_exhibitions"></div>
+                    </div>
                 </div>
                 <div class="other_product_area">
                     <h3 class="more_title">
@@ -613,20 +768,40 @@
                     </h3>
                     <div class="other_products">
                         <div class="product_list">
+                            <div class="stock_list_item stock2"></div>
+                            <div class="stock_list_item stock2"></div>
+                            <div class="stock_list_item stock2"></div>
+                            <div class="stock_list_item stock2"></div>
+                            <div class="stock_list_item stock2"></div>
+                            <div class="stock_list_item stock2"></div>
+                            <div class="stock_list_item stock2"></div>
+                            <div class="stock_list_item stock2"></div>
+                            <div class="stock_list_item stock2"></div>
+                            <div class="stock_list_item stock2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other_product_area">
+                    <h3 class="more_title">
+                        <span class="owner">Jordan의 다른 상품</span>
+                        <a href="#" class="btn_more"><span class="btn_txt">더보기</span></a>
+                    </h3>
+                    <div class="other_products">
+                        <div class="product_list">
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
@@ -637,17 +812,17 @@
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
@@ -658,17 +833,17 @@
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
@@ -679,17 +854,17 @@
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
@@ -700,17 +875,17 @@
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
@@ -721,17 +896,17 @@
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
@@ -742,17 +917,17 @@
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
@@ -763,17 +938,17 @@
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
@@ -784,17 +959,17 @@
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
@@ -805,130 +980,403 @@
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/dior.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Dior High OG</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">8,900,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
                                         </div>
                                     </div>
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other_product_area">
+                    <h3 class="more_title">
+                        <span class="owner">함께 본 상품</span>
+                    </h3>
+                    <div class="other_products">
+                        <div class="product_list">
+                            <div class="stock_list_item">
+                                <a href="#" class="item_inner">
+                                    <div class="product_thumb">
+                                        <img src="./img/sub/scott.webp" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_detail">
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
+                                            <span class="express_mark">빠른배송</span>
+                                        </div>
+                                        <div class="product_price">
+                                            <p class="discount_price">
+                                                <span class="amount">1,382,000</span>
+                                                <span class="won">원</span>
+                                            </p>
+                                            <p class="price_desc">즉시 구매가</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
                             </div>
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/scott.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">1,382,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
                                         </div>
                                     </div>
                                 </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
                             </div>
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/scott.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">1,382,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
                                         </div>
                                     </div>
                                 </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
                             </div>
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/scott.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">1,382,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
                                         </div>
                                     </div>
                                 </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
                             </div>
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/scott.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">1,382,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
                                         </div>
                                     </div>
                                 </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
                             </div>
                             <div class="stock_list_item">
                                 <a href="#" class="item_inner">
                                     <div class="product_thumb">
-                                        <img src="./img/sub/more.webp" alt="">
+                                        <img src="./img/sub/scott.webp" alt="">
                                     </div>
                                     <div class="product_info">
                                         <div class="product_detail">
-                                            <p class="size">Nike</p>
-                                            <p class="name">Nike x Supreme Air Force 1 Low Black</p>
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
                                             <span class="express_mark">빠른배송</span>
                                         </div>
                                         <div class="product_price">
                                             <p class="discount_price">
-                                                <span class="amount">185,000</span>
+                                                <span class="amount">1,382,000</span>
                                                 <span class="won">원</span>
                                             </p>
                                             <p class="price_desc">즉시 구매가</p>
                                         </div>
                                     </div>
                                 </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
                             </div>
-
+                            <div class="stock_list_item">
+                                <a href="#" class="item_inner">
+                                    <div class="product_thumb">
+                                        <img src="./img/sub/scott.webp" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_detail">
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
+                                            <span class="express_mark">빠른배송</span>
+                                        </div>
+                                        <div class="product_price">
+                                            <p class="discount_price">
+                                                <span class="amount">1,382,000</span>
+                                                <span class="won">원</span>
+                                            </p>
+                                            <p class="price_desc">즉시 구매가</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="stock_list_item">
+                                <a href="#" class="item_inner">
+                                    <div class="product_thumb">
+                                        <img src="./img/sub/scott.webp" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_detail">
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
+                                            <span class="express_mark">빠른배송</span>
+                                        </div>
+                                        <div class="product_price">
+                                            <p class="discount_price">
+                                                <span class="amount">1,382,000</span>
+                                                <span class="won">원</span>
+                                            </p>
+                                            <p class="price_desc">즉시 구매가</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="stock_list_item">
+                                <a href="#" class="item_inner">
+                                    <div class="product_thumb">
+                                        <img src="./img/sub/scott.webp" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_detail">
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
+                                            <span class="express_mark">빠른배송</span>
+                                        </div>
+                                        <div class="product_price">
+                                            <p class="discount_price">
+                                                <span class="amount">1,382,000</span>
+                                                <span class="won">원</span>
+                                            </p>
+                                            <p class="price_desc">즉시 구매가</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="stock_list_item">
+                                <a href="#" class="item_inner">
+                                    <div class="product_thumb">
+                                        <img src="./img/sub/scott.webp" alt="">
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_detail">
+                                            <p class="size"> Jordan </p>
+                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
+                                                Blue</p>
+                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
+                                            <span class="express_mark">빠른배송</span>
+                                        </div>
+                                        <div class="product_price">
+                                            <p class="discount_price">
+                                                <span class="amount">1,382,000</span>
+                                                <span class="won">원</span>
+                                            </p>
+                                            <p class="price_desc">즉시 구매가</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="action_wish_review">
+                                    <span class="wish_figure">
+                                        <span class="btn_wish">
+                                            <img src="./img/sub/bookmark.png" alt="">
+                                        </span>
+                                        <span class="text">3.6만</span>
+                                    </span>
+                                    <span class="review_figure">
+                                        <span class="review_link">
+                                            <img src="./img/sub/review.png" alt="">
+                                        </span>
+                                        <span class="text">7,938</span>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -27,7 +27,7 @@
   background-color: rgba(246, 255, 200, 0.7);
   text-align: center;
 }
-.banner_slide > img {
+.banner_slide a img {
   height: 100%;
 }
 

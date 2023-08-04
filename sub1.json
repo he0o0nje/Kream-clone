@@ -1,0 +1,27 @@
+[
+  {
+    "image": "./img/sub/exhibition/ex1.webp",
+    "title": "8월 수수료 환급 이벤트",
+    "desc": "수수료 최대 50% 포인트로 환급"
+  },
+  {
+    "image": "./img/sub/exhibition/ex2.webp",
+    "title": "Best Of best",
+    "desc": "대체 불가! 놓칠 수 없는 아이템"
+  },
+  {
+    "image": "./img/sub/exhibition/ex3.webp",
+    "title": "Style collector's collection",
+    "desc": "[23.2.10 - 2.16] 태그하면 전원 3천 포인트!"
+  },
+  {
+    "image": "./img/sub/exhibition/ex4.webp",
+    "title": "The Best Sneakers",
+    "desc": "브랜드를 대표하는 스니커즈"
+  },
+  {
+    "image": "./img/sub/exhibition/ex5.webp",
+    "title": "Tag Your Style",
+    "desc": "다가올 겨울 힙한 모노톤"
+  }
+]
