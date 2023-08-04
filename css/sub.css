@@ -1107,6 +1107,7 @@ table {
   display: inline-block;
   width: 294px;
   margin-right: 1px;
+  vertical-align: top;
 }
 .feed_card > a {
   display: block;
@@ -1130,6 +1131,7 @@ table {
 }
 .feed_area .card_detail {
   padding: 0 4px 0;
+  margin-top: -15px;
 }
 .user_box {
   align-items: center;
@@ -1166,6 +1168,7 @@ table {
   font-size: 15px;
   cursor: pointer;
   position: relative;
+  margin-right: 15px;
 }
 .btn_like img {
   position: absolute;
