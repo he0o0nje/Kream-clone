@@ -1,580 +1,683 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <title>KREAM</title>
+    <!-- <link href="./css/reset.css" rel="stylesheet"> -->
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <script>
+      $.ajax({
+        type: "get",
+        url: "./data1.json",
+        dataType: "json",
+        success: function (response) {
+          for (let i = 0; i < response.length; i++) {
+            let product = response[i];
+            let image = product["image"];
+            let title = product["title"];
+            let subtitle = product["subtitle"];
+            let price = product["price"];
+            let comment = product["comment"];
+            let temp_html = `<div>
+                            <a href="#" class="item_inner">
+                              <div class="item_img">
+                                <img src='${image}'/>
+                              </div>
+                              <p class="brand">${title}<p>
+                              <p class="name">${subtitle}</p>
+                              <h3 class="price">${price}</h3>
+                              <p class="desc">${comment}</p>
+                            </a>
+                          </div>`;
+            $(".product_item").eq(i).append(temp_html);
+          }
+        },
+      });
+      $.ajax({
+        type: "get",
+        url: "./data2.json",
+        dataType: "json",
+        success: function (response) {
+          for (let i = 0; i < response.length; i++) {
+            let product = response[i];
+            let image = product["image"];
+            let title = product["title"];
+            let subtitle = product["subtitle"];
+            let price = product["price"];
+            let comment = product["comment"];
+            let temp_html = `<div>
+                            <a href="#" class="item_inner">
+                              <div class="item_img">
+                                <img src='${image}'/>
+                              </div>
+                              <p class="brand">${title}<p>
+                              <p class="name">${subtitle}</p>
+                              <h3 class="price">${price}</h3>
+                              <p class="desc">${comment}</p>
+                            </a>
+                          </div>`;
+            $(".product_item_hot").eq(i).append(temp_html);
+          }
+        },
+      });
+      $.ajax({
+        type: "get",
+        url: "./data3.json",
+        dataType: "json",
+        success: function (response) {
+          for (let i = 0; i < response.length; i++) {
+            let product = response[i];
+            let image = product["image"];
+            let title = product["title"];
+            let subtitle = product["subtitle"];
+            let price = product["price"];
+            let comment = product["comment"];
+            let temp_html = `<div>
+                            <a href="#" class="item_inner">
+                              <div class="item_img">
+                                <img src='${image}'/>
+                              </div>
+                              <p class="brand">${title}<p>
+                              <p class="name">${subtitle}</p>
+                              <h3 class="price">${price}</h3>
+                              <p class="desc">${comment}</p>
+                            </a>
+                          </div>`;
+            $(".product_item_new").eq(i).append(temp_html);
+          }
+        },
+      });
+    </script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
-  <title>KREAM</title>
-  <!-- <link href="./css/reset.css" rel="stylesheet"> -->
-  <link href="./css/common.css" rel="stylesheet">
-  <link href="./css/main.css" rel="stylesheet">
-  <script>
-    $.ajax({
-      type: "get",
-      url: "./data1.json",
-      dataType: "json",
-      success: function (response) {
-        for (let i = 0; i < response.length; i++) {
-          let product = response[i]
-          let image = product["image"];
-          let title = product["title"];
-          let subtitle = product["subtitle"];
-          let price = product["price"];
-          let comment = product["comment"];
-          let temp_html = `<div>
-                            <a href="#" class="item_inner">
-                              <div class="item_img">
-                                <img src='${image}'/>
-                              </div>
-                              <p class="brand">${title}<p>
-                              <p class="name">${subtitle}</p>
-                              <h3 class="price">${price}</h3>
-                              <p class="desc">${comment}</p>
-                            </a>
-                          </div>`
-          $(".product_item").eq(i).append(temp_html);
-        }
-      }
-    });
-    $.ajax({
-      type: "get",
-      url: "./data2.json",
-      dataType: "json",
-      success: function (response) {
-        for (let i = 0; i < response.length; i++) {
-          let product = response[i]
-          let image = product["image"];
-          let title = product["title"];
-          let subtitle = product["subtitle"];
-          let price = product["price"];
-          let comment = product["comment"];
-          let temp_html = `<div>
-                            <a href="#" class="item_inner">
-                              <div class="item_img">
-                                <img src='${image}'/>
-                              </div>
-                              <p class="brand">${title}<p>
-                              <p class="name">${subtitle}</p>
-                              <h3 class="price">${price}</h3>
-                              <p class="desc">${comment}</p>
-                            </a>
-                          </div>`
-          $(".product_item_hot").eq(i).append(temp_html);
-        }
-      }
-    });
-    $.ajax({
-      type: "get",
-      url: "./data3.json",
-      dataType: "json",
-      success: function (response) {
-        for (let i = 0; i < response.length; i++) {
-          let product = response[i]
-          let image = product["image"];
-          let title = product["title"];
-          let subtitle = product["subtitle"];
-          let price = product["price"];
-          let comment = product["comment"];
-          let temp_html = `<div>
-                            <a href="#" class="item_inner">
-                              <div class="item_img">
-                                <img src='${image}'/>
-                              </div>
-                              <p class="brand">${title}<p>
-                              <p class="name">${subtitle}</p>
-                              <h3 class="price">${price}</h3>
-                              <p class="desc">${comment}</p>
-                            </a>
-                          </div>`
-          $(".product_item_new").eq(i).append(temp_html);
-        }
-      }
-    });
-  </script>
-</head>
-
-<body style="margin: 0; padding: 0;">
-  <div class="header">
-    <div class="header_top">
-      <ul class="top_list">
-        <li class="top_item"><a href="#" class="top_link">고객센터</a></li>
-        <li class="top_item"><a href="#" class="top_link">마이페이지</a></li>
-        <li class="top_item"><a href="#" class="top_link">관심상품</a></li>
-        <li class="top_item"><a href="#" class="top_link">알림</a></li>
-        <li class="top_item"><a href="#" class="top_link">로그인</a></li>
-      </ul>
-    </div>
-    <div class="header_main">
-      <div class="logo_box"><a href="./index.html" class="logo"><img src="img/head/logo.jpg" alt="logo"></a></div>
-      <nav class="gnb">
-        <ul class="gnb_list">
-          <li class="gnb_item"><a href="#" class="gnb_link">HOME</a></li>
-          <li class="gnb_item"><a href="#" class="gnb_link">STYLE</a></li>
-          <li class="gnb_item"><a href="./sub.html" class="gnb_link">SHOP</a></li>
-          <div class="search_box"><a href="#" class="btn_search"><img src="img/head/search.png" alt="search"></a></div>
+  <body style="margin: 0; padding: 0">
+    <div class="header">
+      <div class="header_top">
+        <ul class="top_list">
+          <li class="top_item"><a href="#" class="top_link">고객센터</a></li>
+          <li class="top_item"><a href="#" class="top_link">마이페이지</a></li>
+          <li class="top_item"><a href="#" class="top_link">관심상품</a></li>
+          <li class="top_item"><a href="#" class="top_link">알림</a></li>
+          <li class="top_item"><a href="#" class="top_link">로그인</a></li>
+        </ul>
+      </div>
+      <div class="header_main">
+        <div class="logo_box">
+          <a href="./index.html" class="logo"
+            ><img src="img/head/logo.jpg" alt="logo"
+          /></a>
+        </div>
+        <nav class="gnb">
+          <ul class="gnb_list">
+            <li class="gnb_item"><a href="#" class="gnb_link">HOME</a></li>
+            <li class="gnb_item"><a href="#" class="gnb_link">STYLE</a></li>
+            <li class="gnb_item">
+              <a href="./sub.html" class="gnb_link">SHOP</a>
+            </li>
+            <div class="search_box">
+              <a href="#" class="btn_search"
+                ><img src="img/head/search.png" alt="search"
+              /></a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <nav class="tabs">
+        <ul class="ul_tab">
+          <li class="li_tab"><a href="#" class="tab">추천</a></li>
+          <li class="li_tab"><a href="#" class="tab">랭킹</a></li>
+          <li class="li_tab"><a href="#" class="tab">럭셔리</a></li>
+          <li class="li_tab"><a href="#" class="tab">남성</a></li>
+          <li class="li_tab"><a href="#" class="tab">여성</a></li>
+          <li class="li_tab"><a href="#" class="tab">발견</a></li>
         </ul>
       </nav>
     </div>
-    <nav class="tabs">
-      <ul class="ul_tab">
-        <li class="li_tab"><a href="#" class="tab">추천</a></li>
-        <li class="li_tab"><a href="#" class="tab">랭킹</a></li>
-        <li class="li_tab"><a href="#" class="tab">럭셔리</a></li>
-        <li class="li_tab"><a href="#" class="tab">남성</a></li>
-        <li class="li_tab"><a href="#" class="tab">여성</a></li>
-        <li class="li_tab"><a href="#" class="tab">발견</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="banner_slide" style="
-  margin-top: 132px;">
-    <a href="./sub.html">
-      <img src="img/banner/banner.webp" alt="banner">
-    </a>
-  </div>
-  <div class="shortcut_collection">
-    <div class="shortcut_items_wrap">
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/a.webp" alt="draw">
-          </div>
-          <p class="shortcut_item_title">크림 드로우</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/b.webp" alt="pick">
-          </div>
-          <p class="shortcut_item_title">셀럽픽</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/c.webp" alt="man">
-          </div>
-          <p class="shortcut_item_title">남성 추천</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/d.webp" alt="woman">
-          </div>
-          <p class="shortcut_item_title">여성 추천</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/e.webp" alt="new">
-          </div>
-          <p class="shortcut_item_title">이번 주 신상</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/f.webp" alt="down">
-          </div>
-          <p class="shortcut_item_title">정가 아래</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/g.webp" alt="luxury">
-          </div>
-          <p class="shortcut_item_title">명품중고거래</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/h.webp" alt="report">
-          </div>
-          <p class="shortcut_item_title">상반기 리포트</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/i.webp" alt="benefit">
-          </div>
-          <p class="shortcut_item_title">7월 혜택모음</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/j.webp" alt="point">
-          </div>
-          <p class="shortcut_item_title">무조건 포인트!</p>
-        </div>
+    <div class="banner_slide" style="margin-top: 132px">
+      <a href="./sub.html">
+        <img src="img/banner/banner.webp" alt="banner" />
       </a>
     </div>
-  </div>
-  <div class="home_products">
-    <div class="title_wrap">
-      <h2 class="title">Just Dropped</h2>
-      <h3 class="sub_title">발매 상품</h3>
+    <div class="shortcut_collection">
+      <div class="shortcut_items_wrap">
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/a.webp" alt="draw" />
+            </div>
+            <p class="shortcut_item_title">크림 드로우</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/b.webp" alt="pick" />
+            </div>
+            <p class="shortcut_item_title">셀럽픽</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/c.webp" alt="man" />
+            </div>
+            <p class="shortcut_item_title">남성 추천</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/d.webp" alt="woman" />
+            </div>
+            <p class="shortcut_item_title">여성 추천</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/e.webp" alt="new" />
+            </div>
+            <p class="shortcut_item_title">이번 주 신상</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/f.webp" alt="down" />
+            </div>
+            <p class="shortcut_item_title">정가 아래</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/g.webp" alt="luxury" />
+            </div>
+            <p class="shortcut_item_title">명품중고거래</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/h.webp" alt="report" />
+            </div>
+            <p class="shortcut_item_title">상반기 리포트</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/i.webp" alt="benefit" />
+            </div>
+            <p class="shortcut_item_title">7월 혜택모음</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/j.webp" alt="point" />
+            </div>
+            <p class="shortcut_item_title">무조건 포인트!</p>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="product_list_wrap">
-      <div class="product_item"></div>
-      <div class="product_item"></div>
-      <div class="product_item"></div>
-      <div class="product_item"></div>
-      <details>
-        <summary class="btn_plus">더보기</summary>
-        <div class="plus_item">
-          <div class="product_item"></div>
-          <div class="product_item"></div>
-          <div class="product_item"></div>
-          <div class="product_item"></div>
-        </div>
-      </details>
+    <div class="home_products">
+      <div class="title_wrap">
+        <h2 class="title">Just Dropped</h2>
+        <h3 class="sub_title">발매 상품</h3>
+      </div>
+      <div class="product_list_wrap">
+        <div class="product_item"></div>
+        <div class="product_item"></div>
+        <div class="product_item"></div>
+        <div class="product_item"></div>
+        <details>
+          <summary class="btn_plus">더보기</summary>
+          <div class="plus_item">
+            <div class="product_item"></div>
+            <div class="product_item"></div>
+            <div class="product_item"></div>
+            <div class="product_item"></div>
+          </div>
+        </details>
+      </div>
     </div>
-  </div>
-  <div class="shortcut_collection_hot">
-    <div class="title_wrap" style="margin-left: 40px;">
-      <h2 class="title">Top 15 Brand</h2>
-      <h3 class="sub_title">인기 탑 15 브랜드</h3>
+    <div class="shortcut_collection_hot">
+      <div class="title_wrap" style="margin-left: 40px">
+        <h2 class="title">Top 15 Brand</h2>
+        <h3 class="sub_title">인기 탑 15 브랜드</h3>
+      </div>
+      <div class="shortcut_items_wrap">
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/스투시.webp" alt="draw" />
+            </div>
+            <p class="shortcut_item_title">스투시</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/코스.webp" alt="pick" />
+            </div>
+            <p class="shortcut_item_title">코스</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/나이키.webp" alt="man" />
+            </div>
+            <p class="shortcut_item_title">나이키</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/아이앱.webp" alt="woman" />
+            </div>
+            <p class="shortcut_item_title">아이앱 스튜디오</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/조던.webp" alt="new" />
+            </div>
+            <p class="shortcut_item_title">조던</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/애플.webp" alt="down" />
+            </div>
+            <p class="shortcut_item_title">애플</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/아미.webp" alt="luxury" />
+            </div>
+            <p class="shortcut_item_title">아미</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/아디다스.webp" alt="report" />
+            </div>
+            <p class="shortcut_item_title">아디다스</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/살로몬.webp" alt="benefit" />
+            </div>
+            <p class="shortcut_item_title">살로몬</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/슈프림.webp" alt="point" />
+            </div>
+            <p class="shortcut_item_title">슈프림</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/뉴발란스.webp" alt="point" />
+            </div>
+            <p class="shortcut_item_title">뉴발란스</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/야스히로.webp" alt="point" />
+            </div>
+            <p class="shortcut_item_title">야스히로</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/아크테릭스.webp" alt="point" />
+            </div>
+            <p class="shortcut_item_title">아크테릭스</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/메종키츠네.webp" alt="point" />
+            </div>
+            <p class="shortcut_item_title">메종 키츠네</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="shortcut_item">
+            <div class="shortcut_item_img_wrap">
+              <img src="img/shortcut/아식스.webp" alt="point" />
+            </div>
+            <p class="shortcut_item_title">아식스</p>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="shortcut_items_wrap">
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/스투시.webp" alt="draw">
-          </div>
-          <p class="shortcut_item_title">스투시</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/코스.webp" alt="pick">
-          </div>
-          <p class="shortcut_item_title">코스</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/나이키.webp" alt="man">
-          </div>
-          <p class="shortcut_item_title">나이키</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/아이앱.webp" alt="woman">
-          </div>
-          <p class="shortcut_item_title">아이앱 스튜디오</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/조던.webp" alt="new">
-          </div>
-          <p class="shortcut_item_title">조던</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/애플.webp" alt="down">
-          </div>
-          <p class="shortcut_item_title">애플</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/아미.webp" alt="luxury">
-          </div>
-          <p class="shortcut_item_title">아미</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/아디다스.webp" alt="report">
-          </div>
-          <p class="shortcut_item_title">아디다스</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/살로몬.webp" alt="benefit">
-          </div>
-          <p class="shortcut_item_title">살로몬</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/슈프림.webp" alt="point">
-          </div>
-          <p class="shortcut_item_title">슈프림</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/뉴발란스.webp" alt="point">
-          </div>
-          <p class="shortcut_item_title">뉴발란스</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/야스히로.webp" alt="point">
-          </div>
-          <p class="shortcut_item_title">야스히로</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/아크테릭스.webp" alt="point">
-          </div>
-          <p class="shortcut_item_title">아크테릭스</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/메종키츠네.webp" alt="point">
-          </div>
-          <p class="shortcut_item_title">메종 키츠네</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="shortcut_item">
-          <div class="shortcut_item_img_wrap">
-            <img src="img/shortcut/아식스.webp" alt="point">
-          </div>
-          <p class="shortcut_item_title">아식스</p>
-        </div>
-      </a>
+    <div class="banner_slide" style="background-color: #efefef">
+      <a><img src="img/banner/ban1.webp" alt="banner" /></a>
     </div>
-  </div>
-  <div class="banner_slide" style="background-color: #efefef;">
-    <a><img src="img/banner/ban1.webp" alt="banner"></a>
-  </div>
-  <div class="home_products_hot">
-    <div class="title_wrap">
-      <h2 class="title">Most Popular</h2>
-      <h3 class="sub_title">인기 상품</h3>
+    <div class="home_products_hot">
+      <div class="title_wrap">
+        <h2 class="title">Most Popular</h2>
+        <h3 class="sub_title">인기 상품</h3>
+      </div>
+      <div class="product_list_wrap">
+        <div class="product_item_hot"></div>
+        <div class="product_item_hot"></div>
+        <div class="product_item_hot"></div>
+        <div class="product_item_hot"></div>
+        <details>
+          <summary class="btn_plus">더보기</summary>
+          <div class="plus_item">
+            <div class="product_item_hot"></div>
+            <div class="product_item_hot"></div>
+            <div class="product_item_hot"></div>
+            <div class="product_item_hot"></div>
+          </div>
+        </details>
+      </div>
     </div>
-    <div class="product_list_wrap">
-      <div class="product_item_hot"></div>
-      <div class="product_item_hot"></div>
-      <div class="product_item_hot"></div>
-      <div class="product_item_hot"></div>
-      <details>
-        <summary class="btn_plus">더보기</summary>
-        <div class="plus_item">
-          <div class="product_item_hot"></div>
-          <div class="product_item_hot"></div>
-          <div class="product_item_hot"></div>
-          <div class="product_item_hot"></div>
+    <div class="social_style_slide">
+      <div class="container_title">
+        <div class="slide_title_wrap">
+          <div class="slide_title">오늘의 인기유저</div>
         </div>
-      </details>
-    </div>
-  </div>
-  <div class="social_style_slide">
-    <div class="container_title">
-      <div class="slide_title_wrap">
-        <div class="slide_title">
-          오늘의 인기유저
+      </div>
+      <div class="style_content">
+        <div class="style_slide">
+          <div class="slick_list">
+            <!-- <div class="slick_track"> -->
+            <!-- <div class="slick_slide"> -->
+            <div class="style_card">
+              <a href="#" class="card_link">
+                <img
+                  src="./img/style/1.webp"
+                  alt="스타일 카드"
+                  class="img_card"
+                />
+                <div class="profile_img_box">
+                  <img
+                    src="./img/style/1.1.webp"
+                    alt="프로필 사진"
+                    class="profile_img"
+                  />
+                </div>
+                <p class="bottom_left">
+                  <span>@oceanneoul</span>
+                </p>
+              </a>
+            </div>
+            <div class="style_card">
+              <a href="#" class="card_link">
+                <img
+                  src="./img/style/2.webp"
+                  alt="스타일 카드"
+                  class="img_card"
+                />
+                <div class="profile_img_box">
+                  <img
+                    src="./img/style/2.2.webp"
+                    alt="프로필 사진"
+                    class="profile_img"
+                  />
+                </div>
+                <p class="bottom_left">
+                  <span>@kimwonhoon</span>
+                </p>
+              </a>
+            </div>
+            <div class="style_card">
+              <a href="#" class="card_link">
+                <img
+                  src="./img/style/3.webp"
+                  alt="스타일 카드"
+                  class="img_card"
+                />
+                <div class="profile_img_box">
+                  <img
+                    src="./img/style/3.3.webp"
+                    alt="프로필 사진"
+                    class="profile_img"
+                  />
+                </div>
+                <p class="bottom_left">
+                  <span>@xuu.0</span>
+                </p>
+              </a>
+            </div>
+            <div class="style_card">
+              <a href="#" class="card_link">
+                <img
+                  src="./img/style/4.webp"
+                  alt="스타일 카드"
+                  class="img_card"
+                />
+                <div class="profile_img_box">
+                  <img
+                    src="./img/style/4.4.webp"
+                    alt="프로필 사진"
+                    class="profile_img"
+                  />
+                </div>
+                <p class="bottom_left">
+                  <span>@katawo</span>
+                </p>
+              </a>
+            </div>
+            <div class="style_card">
+              <a href="#" class="card_link">
+                <img
+                  src="./img/style/5.webp"
+                  alt="스타일 카드"
+                  class="img_card"
+                />
+                <div class="profile_img_box">
+                  <img
+                    src="./img/style/5.5.webp"
+                    alt="프로필 사진"
+                    class="profile_img"
+                  />
+                </div>
+                <p class="bottom_left">
+                  <span>@z00__daa</span>
+                </p>
+              </a>
+            </div>
+            <div class="style_card">
+              <a href="#" class="card_link">
+                <img
+                  src="./img/style/6.webp"
+                  alt="스타일 카드"
+                  class="img_card"
+                />
+                <div class="profile_img_box">
+                  <img
+                    src="./img/style/6.6.webp"
+                    alt="프로필 사진"
+                    class="profile_img"
+                  />
+                </div>
+                <p class="bottom_left">
+                  <span>@stylelistoday</span>
+                </p>
+              </a>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
         </div>
       </div>
     </div>
-    <div class="style_content">
-      <div class="style_slide">
-        <div class="slick_list">
-          <!-- <div class="slick_track"> -->
-          <!-- <div class="slick_slide"> -->
-          <div class="style_card">
-            <a href="#" class="card_link">
-              <img src="./img/style/1.webp" alt="스타일 카드" class="img_card">
-              <div class="profile_img_box">
-                <img src="./img/style/1.1.webp" alt="프로필 사진" class="profile_img">
-              </div>
-              <p class="bottom_left">
-                <span>@oceanneoul</span>
-              </p>
-            </a>
+    <div class="banner_slide" style="background-color: rgb(168, 155, 155)">
+      <a><img src="img/banner/ban2.webp" alt="banner" /></a>
+    </div>
+    <div class="home_products_hot">
+      <div class="title_wrap">
+        <h2 class="title">New In</h2>
+        <h3 class="sub_title">신규 등록 상품</h3>
+      </div>
+      <div class="product_list_wrap">
+        <div class="product_item_new"></div>
+        <div class="product_item_new"></div>
+        <div class="product_item_new"></div>
+        <div class="product_item_new"></div>
+        <details>
+          <summary class="btn_plus">더보기</summary>
+          <div class="plus_item">
+            <div class="product_item_new"></div>
+            <div class="product_item_new"></div>
+            <div class="product_item_new"></div>
+            <div class="product_item_new"></div>
           </div>
-          <div class="style_card">
-            <a href="#" class="card_link">
-              <img src="./img/style/2.webp" alt="스타일 카드" class="img_card">
-              <div class="profile_img_box">
-                <img src="./img/style/2.2.webp" alt="프로필 사진" class="profile_img">
-              </div>
-              <p class="bottom_left">
-                <span>@kimwonhoon</span>
-              </p>
-            </a>
-          </div>
-          <div class="style_card">
-            <a href="#" class="card_link">
-              <img src="./img/style/3.webp" alt="스타일 카드" class="img_card">
-              <div class="profile_img_box">
-                <img src="./img/style/3.3.webp" alt="프로필 사진" class="profile_img">
-              </div>
-              <p class="bottom_left">
-                <span>@xuu.0</span>
-              </p>
-            </a>
-          </div>
-          <div class="style_card">
-            <a href="#" class="card_link">
-              <img src="./img/style/4.webp" alt="스타일 카드" class="img_card">
-              <div class="profile_img_box">
-                <img src="./img/style/4.4.webp" alt="프로필 사진" class="profile_img">
-              </div>
-              <p class="bottom_left">
-                <span>@katawo</span>
-              </p>
-            </a>
-          </div>
-          <div class="style_card">
-            <a href="#" class="card_link">
-              <img src="./img/style/5.webp" alt="스타일 카드" class="img_card">
-              <div class="profile_img_box">
-                <img src="./img/style/5.5.webp" alt="프로필 사진" class="profile_img">
-              </div>
-              <p class="bottom_left">
-                <span>@z00__daa</span>
-              </p>
-            </a>
-          </div>
-          <div class="style_card">
-            <a href="#" class="card_link">
-              <img src="./img/style/6.webp" alt="스타일 카드" class="img_card">
-              <div class="profile_img_box">
-                <img src="./img/style/6.6.webp" alt="프로필 사진" class="profile_img">
-              </div>
-              <p class="bottom_left">
-                <span>@stylelistoday</span>
-              </p>
-            </a>
-          </div>
-          <!-- </div> -->
-          <!-- </div> -->
-        </div>
+        </details>
       </div>
     </div>
-  </div>
-  <div class="banner_slide" style="background-color: rgb(168, 155, 155);">
-    <a><img src="img/banner/ban2.webp" alt="banner"></a>
-  </div>
-  <div class="home_products_hot">
-    <div class="title_wrap">
-      <h2 class="title">New In</h2>
-      <h3 class="sub_title">신규 등록 상품</h3>
-    </div>
-    <div class="product_list_wrap">
-      <div class="product_item_new"></div>
-      <div class="product_item_new"></div>
-      <div class="product_item_new"></div>
-      <div class="product_item_new"></div>
-      <details>
-        <summary class="btn_plus">더보기</summary>
-        <div class="plus_item">
-          <div class="product_item_new"></div>
-          <div class="product_item_new"></div>
-          <div class="product_item_new"></div>
-          <div class="product_item_new"></div>
-        </div>
-      </details>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="footer_inner">
-      <div class="service_area">
-        <div class="footer_menu">
-          <div class="menu_box">
-            <strong class="menu_title">이용안내</strong>
-            <ul class="menu_list">
-              <li class="menu_item"><a href="#" class="menu_link">검수기준</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">이용정책</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">페널티 정책</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">커뮤니티 가이드라인</a></li>
+    <div class="footer">
+      <div class="footer_inner">
+        <div class="service_area">
+          <div class="footer_menu">
+            <div class="menu_box">
+              <strong class="menu_title">이용안내</strong>
+              <ul class="menu_list">
+                <li class="menu_item">
+                  <a href="#" class="menu_link">검수기준</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">이용정책</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">페널티 정책</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">커뮤니티 가이드라인</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu_box" style="margin-left: 80px">
+              <strong class="menu_title">고객지원</strong>
+              <ul class="menu_list">
+                <li class="menu_item">
+                  <a href="#" class="menu_link">공지사항</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">서비스 소개</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">스토어 안내</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">판매자 방문접수</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="menu_box" style="margin-left: 80px;">
-            <strong class="menu_title">고객지원</strong>
-            <ul class="menu_list">
-              <li class="menu_item"><a href="#" class="menu_link">공지사항</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">서비스 소개</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">스토어 안내</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">판매자 방문접수</a></li>
+          <div class="customer_service">
+            <strong class="service_title"
+              >고객센터<a href="#" class="service_tel">1588-7813</a></strong
+            >
+            <div class="service_time">
+              <dl class="time_box">
+                <dt class="time_term">
+                  운영시간 평일 11:00 - 18:00 (토∙일, 공휴일 휴무) 점심시간 평일
+                  13:00 - 14:00
+                </dt>
+              </dl>
+            </div>
+            <p class="service_noti">1:1 문의하기는 앱에서만 가능합니다.</p>
+            <div class="service_btn_box">
+              <a href="#" class="btn">자주 묻는 질문</a>
+            </div>
           </div>
         </div>
-        <div class="customer_service">
-          <strong class="service_title">고객센터<a href="#" class="service_tel">1588-7813</a></strong>
-          <div class="service_time">
-            <dl class="time_box">
-              <dt class="time_term">운영시간 평일 11:00 - 18:00 (토∙일, 공휴일 휴무)
-                점심시간 평일 13:00 - 14:00</dt>
+        <div class="corporation_area">
+          <ul class="term_list">
+            <li class="term_item">
+              <a href="#" class="term_link">회사소개</a>
+            </li>
+            <li class="term_item">
+              <a href="#" class="term_link">인재채용</a>
+            </li>
+            <li class="term_item">
+              <a href="#" class="term_link">제휴제안</a>
+            </li>
+            <li class="term_item">
+              <a href="#" class="term_link">이용약관</a>
+            </li>
+            <li class="term_item">
+              <a href="#" class="term_link" style="font-weight: 700"
+                >개인정보처리방침</a
+              >
+            </li>
+          </ul>
+          <div class="footer_sns">
+            <a href="#" class="sns"
+              ><img src="./img/footer/insta.png" alt="insta" class="icon"
+            /></a>
+            <a href="#" class="sns"
+              ><img src="./img/footer/facebook.png" alt="facebook" class="icon"
+            /></a>
+            <a href="#" class="sns"
+              ><img src="./img/footer/kakotalk.png" alt="kakotalk" class="icon"
+            /></a>
+          </div>
+          <div class="business_info">
+            <dl class="info_item">
+              <dt class="business_title">
+                크림 주식회사 · 대표 김창욱
+                <span class="blank"></span>
+                사업자등록번호 : 570-88-01618
+                <a href="#">사업자정보확인</a>
+                <span class="blank"></span>
+                통신판매업 : 제 2021-성남분당C-0093호
+                <span class="blank"></span>
+                사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원
+                타워1, 8층
+                <span class="blank"></span>
+                호스팅 서비스 : 네이버 클라우드 ㈜
+              </dt>
             </dl>
           </div>
-          <p class="service_noti">1:1 문의하기는 앱에서만 가능합니다.</p>
-          <div class="service_btn_box">
-            <a href="#" class="btn">자주 묻는 질문</a>
-          </div>
         </div>
-      </div>
-      <div class="corporation_area">
-        <ul class="term_list">
-          <li class="term_item"><a href="#" class="term_link">회사소개</a></li>
-          <li class="term_item"><a href="#" class="term_link">인재채용</a></li>
-          <li class="term_item"><a href="#" class="term_link">제휴제안</a></li>
-          <li class="term_item"><a href="#" class="term_link">이용약관</a></li>
-          <li class="term_item"><a href="#" class="term_link" style="font-weight: 700;">개인정보처리방침</a></li>
-        </ul>
-        <div class="footer_sns">
-          <a href="#" class="sns"><img src="./img/footer/insta.png" alt="insta" class="icon"></a>
-          <a href="#" class="sns"><img src="./img/footer/facebook.png" alt="facebook" class="icon"></a>
-          <a href="#" class="sns"><img src="./img/footer/kakotalk.png" alt="kakotalk" class="icon"></a>
+        <div class="notice_guarantee">
+          <p class="title">신한은행 채무지급보증 안내</p>
+          <p class="description">
+            당사는 고객님의 현금 결제 금액에 대해 신한은행과 채무지급보증 계약을
+            체결하여 안전거래를 보장하고 있습니다.<a href="#"
+              >서비스가입 사실 확인</a
+            >
+          </p>
         </div>
-        <div class="business_info">
-          <dl class="info_item">
-            <dt class="business_title">크림 주식회사 · 대표 김창욱
-              <span class="blank"></span>
-              사업자등록번호 : 570-88-01618
-              <a href="#">사업자정보확인</a>
-              <span class="blank"></span>
-              통신판매업 : 제 2021-성남분당C-0093호
-              <span class="blank"></span>
-              사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 8층
-              <span class="blank"></span>
-              호스팅 서비스 : 네이버 클라우드 ㈜
-            </dt>
-          </dl>
+        <div class="notice_area">
+          <p class="notice">
+            크림(주)는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 본
+            상품은 개별판매자가 등록한 상품으로 상품, 상품정보, 거래에 관한
+            의무와 책임은 각 판매자에게 있습니다. 단, 이용약관 및 정책, 기타
+            거래 체결 과정에서 고지하는 내용 등에 따라 검수하고 보증하는 내용에
+            대한 책임은 크림(주)에 있습니다.
+          </p>
+          <p class="copyright">© KREAM Corp.</p>
         </div>
-      </div>
-      <div class="notice_guarantee">
-        <p class="title">신한은행 채무지급보증 안내</p>
-        <p class="description"> 당사는 고객님의 현금 결제 금액에 대해 신한은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.<a href="#">서비스가입 사실 확인</a>
-        </p>
-      </div>
-      <div class="notice_area">
-        <p class="notice">크림(주)는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 본 상품은 개별판매자가 등록한 상품으로 상품, 상품정보, 거래에 관한 의무와 책임은 각 판매자에게
-          있습니다. 단, 이용약관 및 정책, 기타 거래 체결 과정에서 고지하는 내용 등에 따라 검수하고 보증하는 내용에 대한 책임은 크림(주)에 있습니다.</p>
-        <p class="copyright">© KREAM Corp.</p>
       </div>
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
