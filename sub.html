@@ -1,1503 +1,1780 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
     <title>Sub</title>
-    <link href="./css/common.css" rel="stylesheet">
-    <link href="./css/sub.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/sub.css" rel="stylesheet" />
     <script src="./js/subCon.js"></script>
     <script src="./sub1.json"></script>
     <script src="./sub2.json"></script>
-</head>
+  </head>
 
-<body style="margin: 0; padding: 0;">
-    <div class="header" style="box-shadow: 0 0 0 0;">
-        <div class="header_top">
-            <ul class="top_list">
-                <li class="top_item"><a href="#" class="top_link">고객센터</a></li>
-                <li class="top_item"><a href="#" class="top_link">마이페이지</a></li>
-                <li class="top_item"><a href="#" class="top_link">관심상품</a></li>
-                <li class="top_item"><a href="#" class="top_link">알림</a></li>
-                <li class="top_item"><a href="#" class="top_link">로그인</a></li>
-            </ul>
+  <body style="margin: 0; padding: 0">
+    <div class="header" style="box-shadow: 0 0 0 0">
+      <div class="header_top">
+        <ul class="top_list">
+          <li class="top_item"><a href="#" class="top_link">고객센터</a></li>
+          <li class="top_item"><a href="#" class="top_link">마이페이지</a></li>
+          <li class="top_item"><a href="#" class="top_link">관심상품</a></li>
+          <li class="top_item"><a href="#" class="top_link">알림</a></li>
+          <li class="top_item"><a href="#" class="top_link">로그인</a></li>
+        </ul>
+      </div>
+      <div class="header_main">
+        <div class="logo_box">
+          <a href="./index.html" class="logo"
+            ><img src="img/head/logo.jpg" alt="logo"
+          /></a>
         </div>
-        <div class="header_main">
-            <div class="logo_box"><a href="./index.html" class="logo"><img src="img/head/logo.jpg" alt="logo"></a></div>
-            <nav class="gnb">
-                <ul class="gnb_list">
-                    <li class="gnb_item"><a href="#" class="gnb_link">HOME</a></li>
-                    <li class="gnb_item"><a href="#" class="gnb_link">STYLE</a></li>
-                    <li class="gnb_item"><a href="#" class="gnb_link">SHOP</a></li>
-                    <div class="search_box"><a href="#" class="btn_search"><img src="img/head/search.png"
-                                alt="search"></a></div>
-                </ul>
-            </nav>
-        </div>
+        <nav class="gnb">
+          <ul class="gnb_list">
+            <li class="gnb_item"><a href="#" class="gnb_link">HOME</a></li>
+            <li class="gnb_item"><a href="#" class="gnb_link">STYLE</a></li>
+            <li class="gnb_item"><a href="#" class="gnb_link">SHOP</a></li>
+            <div class="search_box">
+              <a href="#" class="btn_search"
+                ><img src="img/head/search.png" alt="search"
+              /></a>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="container_home">
-        <div class="content">
-            <div class="column_bind">
-                <div class="column">
-                    <div class="column_box">
-                        <div class="product">
-                            <img src="./img/product_img/1.webp" alt="상품이미지" class="pro_img">
-                        </div>
-                    </div>
+      <div class="content">
+        <div class="column_bind">
+          <div class="column">
+            <div class="column_box">
+              <div class="product">
+                <img
+                  src="./img/product_img/1.webp"
+                  alt="상품이미지"
+                  class="pro_img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <!-- <div class="column_right"> -->
+            <div class="column_top">
+              <div class="main_title_box">
+                <div>
+                  <a href="#" class="brand"> Jordan </a>
                 </div>
-                <div class="column">
-                    <!-- <div class="column_right"> -->
-                    <div class="column_top">
-                        <div class="main_title_box">
-                            <div>
-                                <a href="#" class="brand"> Jordan </a>
-                            </div>
-                            <p class="title"> Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock </p>
-                            <p class="sub_title">조던 1 x 트래비스 스캇 레트로 로우 OG SP 세일 앤 리저록</p>
-                        </div>
-                        <div class="product_figure_wrap">
-                            <div class="detail_size">
-                                <div class="title">
-                                    <span class="title_txt">사이즈</span>
-                                </div>
-                                <div class="size">
-                                    <a href="#" class="btn_size">
-                                        <span class="btn_text">모든 사이즈</span>
-                                        <img src="./img/sub/dropdown1.png" alt="dropdown" class="dropdown_icon">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="datail_price">
-                                <div class="title">
-                                    <span class="title_txt">최근 거래가</span>
-                                </div>
-                                <div class="price">
-                                    <div class="amount">
-                                        <span class="num">1,592,000</span>
-                                        <span class="won">원</span>
-                                    </div>
-                                    <div class="decrease">
-                                        <p>2,000원 (-0.1%)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn_wrap">
-                            <div class="division_btn_box">
-                                <a href="#" class="btn_division">버튼</a>
-                                <button class="btn_action" style="background-color: rgb(239, 98, 83);">
-                                    <strong class="title">구매</strong>
-                                    <div class="price">
-                                        <span class="amount">
-                                            <em class="num">1,363,000</em>
-                                            <span class="won">원</span>
-                                        </span>
-                                        <span class="desc">즉시 구매가</span>
-                                    </div>
-                                </button>
-                                <button class="btn_action" style="background-color: rgb(65, 185, 121);">
-                                    <strong class="title">판매</strong>
-                                    <div class="price">
-                                        <span class="amount">
-                                            <em class="num">1,521,000</em>
-                                            <span class="won">원</span>
-                                        </span>
-                                        <span class="desc">즉시 판매가</span>
-                                    </div>
-                                </button>
-                            </div>
-                            <a href="#" class="btn_wish">
-                                <img src="./img/sub/bookmark.png" alt="bookmark">
-                                <span class="btn_text">관심상품</span>
-                                <span class="wish_count_num">2.6만</span>
-                            </a>
-                        </div>
+                <p class="title">
+                  Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock
+                </p>
+                <p class="sub_title">
+                  조던 1 x 트래비스 스캇 레트로 로우 OG SP 세일 앤 리저록
+                </p>
+              </div>
+              <div class="product_figure_wrap">
+                <div class="detail_size">
+                  <div class="title">
+                    <span class="title_txt">사이즈</span>
+                  </div>
+                  <div class="size">
+                    <a href="#" class="btn_size">
+                      <span class="btn_text">모든 사이즈</span>
+                      <img
+                        src="./img/sub/dropdown1.png"
+                        alt="dropdown"
+                        class="dropdown_icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="datail_price">
+                  <div class="title">
+                    <span class="title_txt">최근 거래가</span>
+                  </div>
+                  <div class="price">
+                    <div class="amount">
+                      <span class="num">1,592,000</span>
+                      <span class="won">원</span>
                     </div>
-                    <div class="product_info_wrap">
-                        <h3 class="info_title">상품 정보</h3>
-                        <div class="detail_product_wrap">
-                            <dl class="detail_product">
-                                <div class="detail_box model_num">
-                                    <dt class="product_title"> 모델번호 </dt>
-                                    <dd class="product_info">
-                                        DM7866-162 </dd>
-                                </div>
-                                <div class="detail_box">
-                                    <dt class="product_title"> 출시일 </dt>
-                                    <dd class="product_info"> 22/07/21 </dd>
-                                </div>
-                                <div class="detail_box">
-                                    <dt class="product_title"> 컬러 </dt>
-                                    <dd class="product_info"> SAIL/UNIVERSITY RED-RIDGEROCK </dd>
-                                </div>
-                                <div class="detail_box">
-                                    <dt class="product_title"> 발매가 </dt>
-                                    <dd class="product_info"> 189,000원 </dd>
-                                </div>
-                            </dl>
-                        </div>
+                    <div class="decrease">
+                      <p>2,000원 (-0.1%)</p>
                     </div>
-                    <div class="display_section_wrap">
-                        <div class="display_item">
-                            <div class="title_wrap">
-                                <p class="title">추가 혜택</p>
-                                <a href="#" class="destination_url"> 더보기 </a>
-                            </div>
-                            <div class="display_line">
-                                <p class="line_title">포인트</p>
-                                <div class="description_wrap">
-                                    <p class="line_description">계좌 간편결제 시 <em>1%</em> 적립</p>
-                                </div>
-                            </div>
-                            <div class="display_line">
-                                <p class="line_title">결제</p>
-                                <div class="description_wrap">
-                                    <p class="line_description">카카오페이 최대 4만원 즉시할인!</p>
-                                    <p class="line_accessory">외 2건</p>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <div class="division_btn_box">
+                  <a href="#" class="btn_division">버튼</a>
+                  <button
+                    class="btn_action"
+                    style="background-color: rgb(239, 98, 83)"
+                  >
+                    <strong class="title">구매</strong>
+                    <div class="price">
+                      <span class="amount">
+                        <em class="num">1,363,000</em>
+                        <span class="won">원</span>
+                      </span>
+                      <span class="desc">즉시 구매가</span>
                     </div>
-                    <div class="delivery_way_wrap">
-                        <h3 class="detail_title"> 배송 정보 </h3>
-                        <div class="delivery_way">
-                            <div class="way_info">
-                                <div class="way_status_thumb">
-                                    <img src="./img/sub/delivery1.png" alt="" class="way_img">
-                                </div>
-                                <div class="way_desc">
-                                    <p class="company">
-                                        <span class="badge_title">빠른배송 </span>
-                                        <span class="title">5,000원</span>
-                                        <span role="button">
-                                            <img src="./img/sub/help.png" alt="" class="ico_help">
-                                        </span>
-                                    </p>
-                                    <p class="sub_text">지금 결제시 <em>내일 8/3(목) 도착 예정</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="delivery_way">
-                            <div class="way_info">
-                                <div class="way_status_thumb">
-                                    <img src="./img/sub/delivery2.png" alt="" class="way_img">
-                                </div>
-                                <div class="way_desc">
-                                    <p class="company">
-                                        <span class="badge_title">일반배송 </span>
-                                        <span class="title">3,000원</span>
-                                        <!-- <span role="button">
+                  </button>
+                  <button
+                    class="btn_action"
+                    style="background-color: rgb(65, 185, 121)"
+                  >
+                    <strong class="title">판매</strong>
+                    <div class="price">
+                      <span class="amount">
+                        <em class="num">1,521,000</em>
+                        <span class="won">원</span>
+                      </span>
+                      <span class="desc">즉시 판매가</span>
+                    </div>
+                  </button>
+                </div>
+                <a href="#" class="btn_wish">
+                  <img src="./img/sub/bookmark.png" alt="bookmark" />
+                  <span class="btn_text">관심상품</span>
+                  <span class="wish_count_num">2.6만</span>
+                </a>
+              </div>
+            </div>
+            <div class="product_info_wrap">
+              <h3 class="info_title">상품 정보</h3>
+              <div class="detail_product_wrap">
+                <dl class="detail_product">
+                  <div class="detail_box model_num">
+                    <dt class="product_title">모델번호</dt>
+                    <dd class="product_info">DM7866-162</dd>
+                  </div>
+                  <div class="detail_box">
+                    <dt class="product_title">출시일</dt>
+                    <dd class="product_info">22/07/21</dd>
+                  </div>
+                  <div class="detail_box">
+                    <dt class="product_title">컬러</dt>
+                    <dd class="product_info">SAIL/UNIVERSITY RED-RIDGEROCK</dd>
+                  </div>
+                  <div class="detail_box">
+                    <dt class="product_title">발매가</dt>
+                    <dd class="product_info">189,000원</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="display_section_wrap">
+              <div class="display_item">
+                <div class="title_wrap">
+                  <p class="title">추가 혜택</p>
+                  <a href="#" class="destination_url"> 더보기 </a>
+                </div>
+                <div class="display_line">
+                  <p class="line_title">포인트</p>
+                  <div class="description_wrap">
+                    <p class="line_description">
+                      계좌 간편결제 시 <em>1%</em> 적립
+                    </p>
+                  </div>
+                </div>
+                <div class="display_line">
+                  <p class="line_title">결제</p>
+                  <div class="description_wrap">
+                    <p class="line_description">
+                      카카오페이 최대 4만원 즉시할인!
+                    </p>
+                    <p class="line_accessory">외 2건</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="delivery_way_wrap">
+              <h3 class="detail_title">배송 정보</h3>
+              <div class="delivery_way">
+                <div class="way_info">
+                  <div class="way_status_thumb">
+                    <img src="./img/sub/delivery1.png" alt="" class="way_img" />
+                  </div>
+                  <div class="way_desc">
+                    <p class="company">
+                      <span class="badge_title">빠른배송 </span>
+                      <span class="title">5,000원</span>
+                      <span role="button">
+                        <img src="./img/sub/help.png" alt="" class="ico_help" />
+                      </span>
+                    </p>
+                    <p class="sub_text">
+                      지금 결제시 <em>내일 8/3(목) 도착 예정</em>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery_way">
+                <div class="way_info">
+                  <div class="way_status_thumb">
+                    <img src="./img/sub/delivery2.png" alt="" class="way_img" />
+                  </div>
+                  <div class="way_desc">
+                    <p class="company">
+                      <span class="badge_title">일반배송 </span>
+                      <span class="title">3,000원</span>
+                      <!-- <span role="button">
                                             <img src="./img/sub/help.png" alt="" class="ico_help">
                                         </span> -->
-                                    </p>
-                                    <p class="sub_text">검수 후 배송 ・ 5-7일 내 도착 예정</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="delivery_way">
-                            <div class="way_info">
-                                <div class="way_status_thumb">
-                                    <img src="./img/sub/delivery3.png" alt="" class="way_img">
-                                </div>
-                                <div class="way_desc">
-                                    <p class="company">
-                                        <span class="badge_title">창고보관 </span>
-                                        <span class="title">첫 30일 무료</span>
-                                        <span role="button">
-                                            <img src="./img/sub/help.png" alt="" class="ico_help">
-                                        </span>
-                                    </p>
-                                    <p class="sub_text">배송 없이 창고에 보관 ・ 빠르게 판매 가능</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner_box">
-                        <a href="#" class="banner_link">
-                            <img src="./img/sub/banner.webp" alt="banner">
-                        </a>
-                    </div>
-                    <div class="datail wrap">
-                        <div class="product_sales_graph">
-                            <div class="title">
-                                <h3 class="detail_title"> 시세 </h3>
-                                <div class="sales_filter">
-                                    <div class="filter_unit">
-                                        <button class="btn_select">
-                                            <span class="select_text">모든 사이즈</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap_sales">
-                                <div class="tab_area">
-                                    <ul class="tab_list">
-                                        <li class="item">
-                                            <a href="#" class="item_link">1개월</a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="#" class="item_link">3개월</a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="#" class="item_link">6개월</a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="#" class="item_link">1년</a>
-                                        </li>
-                                        <li class="item on">
-                                            <a href="#" class="item_link">전체</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab_content">
-                                        <div class="graph">
-                                            <canvas id="1" height="0"
-                                                style="display: block; box-sizing: border-box; height: 0px; width: 0px;"></canvas>
-                                        </div>
-                                    </div>
-                                    <div class="tab_content">
-                                        <div class="graph">
-                                            <canvas id="2" height="0"
-                                                style="display: block; box-sizing: border-box; height: 0px; width: 0px;"></canvas>
-                                        </div>
-                                    </div>
-                                    <div class="tab_content">
-                                        <div class="graph">
-                                            <canvas id="3" height="0"
-                                                style="display: block; box-sizing: border-box; height: 0px; width: 0px;"></canvas>
-                                        </div>
-                                    </div>
-                                    <div class="tab_content">
-                                        <div class="graph">
-                                            <canvas id="4" height="0"
-                                                style="display: block; box-sizing: border-box; height: 0px; width: 0px;"></canvas>
-                                        </div>
-                                    </div>
-                                    <div class="tab_content show">
-                                        <div class="graph">
-                                            <canvas id="5" width="560" height="200"
-                                                style="display: block; box-sizing: border-box; height: 200px; width: 560px;"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap_bids">
-                                <div class="tab_area">
-                                    <ul class="tab_list">
-                                        <li class="item on">
-                                            <a href="#" class="item_link">체결 거래</a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="#" class="item_link">판매 입찰</a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="#" class="item_link">구매 입찰</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab_content show">
-                                        <div class="table_wrap">
-                                            <table>
-                                                <caption>
-                                                    <span class="blind">데이터 테이블</span>
-                                                </caption>
-                                                <colgroup>
-                                                    <col style="width: 29.76%;">
-                                                    <col style="width: 36.52%;">
-                                                    <col style="width: 33.72%;">
-                                                </colgroup>
-                                                <thead>
-                                                    <tr>
-                                                        <th class="table_th"> 사이즈 </th>
-                                                        <th class="table_th align_right"> 거래가 </th>
-                                                        <th class="table_th align_right"> 거래일 </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="table_td"> 270 </td>
-                                                        <td class="table_td align_right"> 1,532,000원
-                                                            <i class="express_icon">
-                                                                <img src="./img/sub/quick.png" alt="express_icon">
-                                                                <span class="blind">빠른배송</span>
-                                                            </i>
-                                                        </td>
-                                                        <td class="table_td align_right"> 23/08/02 </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table_td"> 270 </td>
-                                                        <td class="table_td align_right"> 1,532,000원
-                                                            <i class="express_icon">
-                                                                <img src="./img/sub/quick.png" alt="express_icon">
-                                                                <span class="blind">빠른배송</span>
-                                                            </i>
-                                                        </td>
-                                                        <td class="table_td align_right"> 23/08/02 </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table_td"> 270 </td>
-                                                        <td class="table_td align_right"> 1,535,000원
-                                                            <i class="express_icon">
-                                                                <img src="./img/sub/quick.png" alt="express_icon">
-                                                                <span class="blind">빠른배송</span>
-                                                            </i>
-                                                        </td>
-                                                        <td class="table_td align_right"> 23/08/02 </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table_td"> 270 </td>
-                                                        <td class="table_td align_right"> 1,533,000원
-                                                            <i class="express_icon">
-                                                                <img src="./img/sub/quick.png" alt="express_icon">
-                                                                <span class="blind">빠른배송</span>
-                                                            </i>
-                                                        </td>
-                                                        <td class="table_td align_right"> 23/08/02 </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="table_td"> 270 </td>
-                                                        <td class="table_td align_right"> 1,535,000원
-                                                            <i class="express_icon">
-                                                                <img src="./img/sub/quick.png" alt="express_icon">
-                                                                <span class="blind">빠른배송</span>
-                                                            </i>
-                                                        </td>
-                                                        <td class="table_td align_right"> 23/08/02 </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <a href="#" class="btn_outlinegrey"> 체결 내역 더보기 </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layer_alert_login">
-                                <div class="layer_content">
-                                    <p class="notice">모든 체결 거래는<br>로그인 후 확인 가능합니다.</p>
-                                    <a href="#" class="btn_login" type="button"> 로그인 </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="confirm_wrap"></div>
-                            <div class="point_quide"></div>
-                            <p class="meditaion_notice_product"></p>
-                        </div>
-                        <div class="confirm_wrap">
-                            <h3 class="confirm_title">구매 전 꼭 확인해주세요!</h3>
-                            <div class="confirm_content">
-                                <ul class="dropdown_list">
-                                    <li>
-                                        <div class="dropdown">
-                                            <p class="title">배송 기간 안내</p>
-                                            <img src="./img/sub/dropdown2.png" alt="dropdown">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dropdown">
-                                            <p class="title">검수 안내</p>
-                                            <img src="./img/sub/dropdown2.png" alt="dropdown">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dropdown">
-                                            <p class="title">구매 환불/취소/교환 안내</p>
-                                            <img src="./img/sub/dropdown2.png" alt="dropdown">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="point_guide">
-                            <ul class="guide_list">
-                                <li class="guide_item">
-                                    <div class="thumb_area">
-                                        <img src="./img/sub/guide1.svg" alt="">
-                                    </div>
-                                    <div class="text_area">
-                                        <strong class="title">100% 정품 보증</strong>
-                                        <p class="desc">KREAM에서 검수한 상품이 정품이 아닐 경우, 구매가의 3배를 보상합니다.</p>
-                                    </div>
-                                </li>
-                                <li class="guide_item">
-                                    <div class="thumb_area">
-                                        <img src="./img/sub/guide2.svg" alt="">
-                                    </div>
-                                    <div class="text_area">
-                                        <strong class="title">엄격한 다중 검수</strong>
-                                        <p class="desc">모든 상품은 검수센터에 도착한 후, 상품별 전문가 그룹의 체계적인 시스템을 거쳐 검수를 진행합니다.</p>
-                                    </div>
-                                </li>
-                                <li class="guide_item">
-                                    <div class="thumb_area">
-                                        <img src="./img/sub/guide3.svg" alt="">
-                                    </div>
-                                    <div class="text_area">
-                                        <strong class="title">정품 인증 패키지</strong>
-                                        <p class="desc">검수에 합격한 경우에 한하여 KREAM의 정품 인증 패키지가 포함된 상품이 배송됩니다.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <p class="meditaion_notice_product"> 크림(주)는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 본 상품은 개별판매자가 등록한 상품으로
-                            상품, 상품정보, 거래에 관한 의무와 책임은 각 판매자에게 있습니다. 단, 이용약관 및 정책, 기타 거래 체결 과정에서 고지하는 내용 등에 따라 검수하고 보증하는
-                            내용에 대한 책임은 크림(주)에 있습니다. </p>
-                    </div>
-                    <!-- </div> -->
+                    </p>
+                    <p class="sub_text">검수 후 배송 ・ 5-7일 내 도착 예정</p>
+                  </div>
                 </div>
+              </div>
+              <div class="delivery_way">
+                <div class="way_info">
+                  <div class="way_status_thumb">
+                    <img src="./img/sub/delivery3.png" alt="" class="way_img" />
+                  </div>
+                  <div class="way_desc">
+                    <p class="company">
+                      <span class="badge_title">창고보관 </span>
+                      <span class="title">첫 30일 무료</span>
+                      <span role="button">
+                        <img src="./img/sub/help.png" alt="" class="ico_help" />
+                      </span>
+                    </p>
+                    <p class="sub_text">
+                      배송 없이 창고에 보관 ・ 빠르게 판매 가능
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="banner_box">
+              <a href="#" class="banner_link">
+                <img src="./img/sub/banner.webp" alt="banner" />
+              </a>
+            </div>
+            <div class="datail wrap">
+              <div class="product_sales_graph">
+                <div class="title">
+                  <h3 class="detail_title">시세</h3>
+                  <div class="sales_filter">
+                    <div class="filter_unit">
+                      <button class="btn_select">
+                        <span class="select_text">모든 사이즈</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrap_sales">
+                  <div class="tab_area">
+                    <ul class="tab_list">
+                      <li class="item">
+                        <a href="#" class="item_link">1개월</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item_link">3개월</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item_link">6개월</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item_link">1년</a>
+                      </li>
+                      <li class="item on">
+                        <a href="#" class="item_link">전체</a>
+                      </li>
+                    </ul>
+                    <div class="tab_content">
+                      <div class="graph">
+                        <canvas
+                          id="1"
+                          height="0"
+                          style="
+                            display: block;
+                            box-sizing: border-box;
+                            height: 0px;
+                            width: 0px;
+                          "
+                        ></canvas>
+                      </div>
+                    </div>
+                    <div class="tab_content">
+                      <div class="graph">
+                        <canvas
+                          id="2"
+                          height="0"
+                          style="
+                            display: block;
+                            box-sizing: border-box;
+                            height: 0px;
+                            width: 0px;
+                          "
+                        ></canvas>
+                      </div>
+                    </div>
+                    <div class="tab_content">
+                      <div class="graph">
+                        <canvas
+                          id="3"
+                          height="0"
+                          style="
+                            display: block;
+                            box-sizing: border-box;
+                            height: 0px;
+                            width: 0px;
+                          "
+                        ></canvas>
+                      </div>
+                    </div>
+                    <div class="tab_content">
+                      <div class="graph">
+                        <canvas
+                          id="4"
+                          height="0"
+                          style="
+                            display: block;
+                            box-sizing: border-box;
+                            height: 0px;
+                            width: 0px;
+                          "
+                        ></canvas>
+                      </div>
+                    </div>
+                    <div class="tab_content show">
+                      <div class="graph">
+                        <canvas
+                          id="5"
+                          width="560"
+                          height="200"
+                          style="
+                            display: block;
+                            box-sizing: border-box;
+                            height: 200px;
+                            width: 560px;
+                          "
+                        ></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrap_bids">
+                  <div class="tab_area">
+                    <ul class="tab_list">
+                      <li class="item on">
+                        <a href="#" class="item_link">체결 거래</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item_link">판매 입찰</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item_link">구매 입찰</a>
+                      </li>
+                    </ul>
+                    <div class="tab_content show">
+                      <div class="table_wrap">
+                        <table>
+                          <caption>
+                            <span class="blind">데이터 테이블</span>
+                          </caption>
+                          <colgroup>
+                            <col style="width: 29.76%" />
+                            <col style="width: 36.52%" />
+                            <col style="width: 33.72%" />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th class="table_th">사이즈</th>
+                              <th class="table_th align_right">거래가</th>
+                              <th class="table_th align_right">거래일</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="table_td">270</td>
+                              <td class="table_td align_right">
+                                1,532,000원
+                                <i class="express_icon">
+                                  <img
+                                    src="./img/sub/quick.png"
+                                    alt="express_icon"
+                                  />
+                                  <span class="blind">빠른배송</span>
+                                </i>
+                              </td>
+                              <td class="table_td align_right">23/08/02</td>
+                            </tr>
+                            <tr>
+                              <td class="table_td">270</td>
+                              <td class="table_td align_right">
+                                1,532,000원
+                                <i class="express_icon">
+                                  <img
+                                    src="./img/sub/quick.png"
+                                    alt="express_icon"
+                                  />
+                                  <span class="blind">빠른배송</span>
+                                </i>
+                              </td>
+                              <td class="table_td align_right">23/08/02</td>
+                            </tr>
+                            <tr>
+                              <td class="table_td">270</td>
+                              <td class="table_td align_right">
+                                1,535,000원
+                                <i class="express_icon">
+                                  <img
+                                    src="./img/sub/quick.png"
+                                    alt="express_icon"
+                                  />
+                                  <span class="blind">빠른배송</span>
+                                </i>
+                              </td>
+                              <td class="table_td align_right">23/08/02</td>
+                            </tr>
+                            <tr>
+                              <td class="table_td">270</td>
+                              <td class="table_td align_right">
+                                1,533,000원
+                                <i class="express_icon">
+                                  <img
+                                    src="./img/sub/quick.png"
+                                    alt="express_icon"
+                                  />
+                                  <span class="blind">빠른배송</span>
+                                </i>
+                              </td>
+                              <td class="table_td align_right">23/08/02</td>
+                            </tr>
+                            <tr>
+                              <td class="table_td">270</td>
+                              <td class="table_td align_right">
+                                1,535,000원
+                                <i class="express_icon">
+                                  <img
+                                    src="./img/sub/quick.png"
+                                    alt="express_icon"
+                                  />
+                                  <span class="blind">빠른배송</span>
+                                </i>
+                              </td>
+                              <td class="table_td align_right">23/08/02</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <a href="#" class="btn_outlinegrey"> 체결 내역 더보기 </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="layer_alert_login">
+                  <div class="layer_content">
+                    <p class="notice">
+                      모든 체결 거래는<br />로그인 후 확인 가능합니다.
+                    </p>
+                    <a href="#" class="btn_login" type="button"> 로그인 </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="confirm_wrap"></div>
+                <div class="point_quide"></div>
+                <p class="meditaion_notice_product"></p>
+              </div>
+              <div class="confirm_wrap">
+                <h3 class="confirm_title">구매 전 꼭 확인해주세요!</h3>
+                <div class="confirm_content">
+                  <ul class="dropdown_list">
+                    <li>
+                      <div class="dropdown">
+                        <p class="title">배송 기간 안내</p>
+                        <img src="./img/sub/dropdown2.png" alt="dropdown" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown">
+                        <p class="title">검수 안내</p>
+                        <img src="./img/sub/dropdown2.png" alt="dropdown" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown">
+                        <p class="title">구매 환불/취소/교환 안내</p>
+                        <img src="./img/sub/dropdown2.png" alt="dropdown" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="point_guide">
+                <ul class="guide_list">
+                  <li class="guide_item">
+                    <div class="thumb_area">
+                      <img src="./img/sub/guide1.svg" alt="" />
+                    </div>
+                    <div class="text_area">
+                      <strong class="title">100% 정품 보증</strong>
+                      <p class="desc">
+                        KREAM에서 검수한 상품이 정품이 아닐 경우, 구매가의 3배를
+                        보상합니다.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="guide_item">
+                    <div class="thumb_area">
+                      <img src="./img/sub/guide2.svg" alt="" />
+                    </div>
+                    <div class="text_area">
+                      <strong class="title">엄격한 다중 검수</strong>
+                      <p class="desc">
+                        모든 상품은 검수센터에 도착한 후, 상품별 전문가 그룹의
+                        체계적인 시스템을 거쳐 검수를 진행합니다.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="guide_item">
+                    <div class="thumb_area">
+                      <img src="./img/sub/guide3.svg" alt="" />
+                    </div>
+                    <div class="text_area">
+                      <strong class="title">정품 인증 패키지</strong>
+                      <p class="desc">
+                        검수에 합격한 경우에 한하여 KREAM의 정품 인증 패키지가
+                        포함된 상품이 배송됩니다.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <p class="meditaion_notice_product">
+                크림(주)는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 본
+                상품은 개별판매자가 등록한 상품으로 상품, 상품정보, 거래에 관한
+                의무와 책임은 각 판매자에게 있습니다. 단, 이용약관 및 정책, 기타
+                거래 체결 과정에서 고지하는 내용 등에 따라 검수하고 보증하는
+                내용에 대한 책임은 크림(주)에 있습니다.
+              </p>
+            </div>
+            <!-- </div> -->
+          </div>
         </div>
+      </div>
+      <div>
         <div>
-            <div>
-                <div class="other_stock">
-                    <h3 class="more_title">
-                        <span class="title_txt">95점 추천 상품</span>
-                        <button class="btn_help">
-                            <img src="./img/sub/help.png" alt="">
-                        </button>
-                    </h3>
-                    <div class="other_stock_list">
-                        <div class="stock_list_item">
-                            <a href="#" class="item_inner">
-                                <div class="product_thumb">
-                                    <img src="./img/sub/stock.webp" alt="">
-                                </div>
-                                <div class="product_info">
-                                    <div class="product_detail">
-                                        <p class="size">270</p>
-                                        <p class="name">Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock</p>
-                                        <span class="express_mark">빠른배송</span>
-                                    </div>
-                                    <div class="product_price">
-                                        <p class="discount_price">
-                                            <span class="amount">1,599,000</span>
-                                            <span class="won">원</span>
-                                        </p>
-                                        <p class="price_desc">95점 구매가</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="stock_list_item">
-                            <a href="#" class="item_inner">
-                                <div class="product_thumb">
-                                    <img src="./img/sub/stock.webp" alt="">
-                                </div>
-                                <div class="product_info">
-                                    <div class="product_detail">
-                                        <p class="size">270</p>
-                                        <p class="name">Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock</p>
-                                        <span class="express_mark">빠른배송</span>
-                                    </div>
-                                    <div class="product_price">
-                                        <p class="discount_price">
-                                            <span class="amount">1,599,000</span>
-                                            <span class="won">원</span>
-                                        </p>
-                                        <p class="price_desc">95점 구매가</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="stock_list_item">
-                            <a href="#" class="item_inner">
-                                <div class="product_thumb">
-                                    <img src="./img/sub/stock.webp" alt="">
-                                </div>
-                                <div class="product_info">
-                                    <div class="product_detail">
-                                        <p class="size">270</p>
-                                        <p class="name">Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock</p>
-                                        <span class="express_mark">빠른배송</span>
-                                    </div>
-                                    <div class="product_price">
-                                        <p class="discount_price">
-                                            <span class="amount">1,599,000</span>
-                                            <span class="won">원</span>
-                                        </p>
-                                        <p class="price_desc">95점 구매가</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="stock_list_item">
-                            <a href="#" class="item_inner">
-                                <div class="product_thumb">
-                                    <img src="./img/sub/stock.webp" alt="">
-                                </div>
-                                <div class="product_info">
-                                    <div class="product_detail">
-                                        <p class="size">270</p>
-                                        <p class="name">Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock</p>
-                                        <span class="express_mark">빠른배송</span>
-                                    </div>
-                                    <div class="product_price">
-                                        <p class="discount_price">
-                                            <span class="amount">1,599,000</span>
-                                            <span class="won">원</span>
-                                        </p>
-                                        <p class="price_desc">95점 구매가</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="stock_list_item">
-                            <a href="#" class="item_inner">
-                                <div class="product_thumb">
-                                    <img src="./img/sub/stock.webp" alt="">
-                                </div>
-                                <div class="product_info">
-                                    <div class="product_detail">
-                                        <p class="size">270</p>
-                                        <p class="name">Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock</p>
-                                        <span class="express_mark">빠른배송</span>
-                                    </div>
-                                    <div class="product_price">
-                                        <p class="discount_price">
-                                            <span class="amount">1,599,000</span>
-                                            <span class="won">원</span>
-                                        </p>
-                                        <p class="price_desc">95점 구매가</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="stock_list_item">
-                            <a href="#" class="item_inner">
-                                <div class="product_thumb">
-                                    <img src="./img/sub/stock.webp" alt="">
-                                </div>
-                                <div class="product_info">
-                                    <div class="product_detail">
-                                        <p class="size">270</p>
-                                        <p class="name">Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock</p>
-                                        <span class="express_mark">빠른배송</span>
-                                    </div>
-                                    <div class="product_price">
-                                        <p class="discount_price">
-                                            <span class="amount">1,599,000</span>
-                                            <span class="won">원</span>
-                                        </p>
-                                        <p class="price_desc">95점 구매가</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="stock_list_item">
-                            <a href="#" class="item_inner">
-                                <div class="product_thumb">
-                                    <img src="./img/sub/stock.webp" alt="">
-                                </div>
-                                <div class="product_info">
-                                    <div class="product_detail">
-                                        <p class="size">270</p>
-                                        <p class="name">Jordan 1 x Travis Scott Retro Low OG SP Sail and Ridgerock</p>
-                                        <span class="express_mark">빠른배송</span>
-                                    </div>
-                                    <div class="product_price">
-                                        <p class="discount_price">
-                                            <span class="amount">1,599,000</span>
-                                            <span class="won">원</span>
-                                        </p>
-                                        <p class="price_desc">95점 구매가</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
+          <div class="other_stock">
+            <h3 class="more_title">
+              <span class="title_txt">95점 추천 상품</span>
+              <button class="btn_help">
+                <img src="./img/sub/help.png" alt="" />
+              </button>
+            </h3>
+            <div class="other_stock_list">
+              <div class="stock_list_item">
+                <a href="#" class="item_inner">
+                  <div class="product_thumb">
+                    <img src="./img/sub/stock.webp" alt="" />
+                  </div>
+                  <div class="product_info">
+                    <div class="product_detail">
+                      <p class="size">270</p>
+                      <p class="name">
+                        Jordan 1 x Travis Scott Retro Low OG SP Sail and
+                        Ridgerock
+                      </p>
+                      <span class="express_mark">빠른배송</span>
                     </div>
-                </div>
-                <div class="feed_area">
-                    <h3 class="more_title">
-                        <span class="title_txt">스타일 2745</span>
-                    </h3>
-                    <div class="social_feeds">
-                        <div class="masonry_feed">
-                            <div class="feed_card">
-                                <a href="#">
-                                    <div class="social_img_box">
-                                        <img src="./img/sub/review/1.png" alt="">
-                                    </div>
-                                    <div class="card_detail">
-                                        <div class="user_box">
-                                            <div class="profile_box">
-                                                <img src="./img/sub/review/1.1.png" alt="" class="img_profile">
-                                            </div>
-                                            <p class="user_name">9z7290</p>
-                                            <span class="btn_like">
-                                                <img src="./img/sub/like.png" alt="">
-                                                <span class="like_count">14</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="feed_card">
-                                <a href="#">
-                                    <div class="social_img_box">
-                                        <img src="./img/sub/review/2.png" alt="">
-                                    </div>
-                                    <div class="card_detail">
-                                        <div class="user_box">
-                                            <div class="profile_box">
-                                                <img src="./img/sub/review/2.2.webp" alt="" class="img_profile">
-                                            </div>
-                                            <p class="user_name">easy_won</p>
-                                            <span class="btn_like">
-                                                <img src="./img/sub/like.png" alt="">
-                                                <span class="like_count">22</span>
-                                            </span>
-                                        </div>
-                                        <p class="text_box">돈값하는 최애 코디2</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="feed_card">
-                                <a href="#">
-                                    <div class="social_img_box">
-                                        <img src="./img/sub/review/3.png" alt="">
-                                    </div>
-                                    <div class="card_detail">
-                                        <div class="user_box">
-                                            <div class="profile_box">
-                                                <img src="./img/sub/review/3.3.webp" alt="" class="img_profile">
-                                            </div>
-                                            <p class="user_name">jjjjun.h</p>
-                                            <span class="btn_like">
-                                                <img src="./img/sub/like.png" alt="">
-                                                <span class="like_count">29</span>
-                                            </span>
-                                        </div>
-                                        <p class="text_box">#휴가코디 #썸머스타일 #outfit #오늘뭐신지 #폭염패션 #캐피탈</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="feed_card">
-                                <a href="#">
-                                    <div class="social_img_box">
-                                        <img src="./img/sub/review/4.png" alt="">
-                                    </div>
-                                    <div class="card_detail">
-                                        <div class="user_box">
-                                            <div class="profile_box">
-                                                <img src="./img/sub/review/4.4.webp" alt="" class="img_profile">
-                                            </div>
-                                            <p class="user_name">junn2</p>
-                                            <span class="btn_like">
-                                                <img src="./img/sub/like.png" alt="">
-                                                <span class="like_count">21</span>
-                                            </span>
-                                        </div>
-                                        <p class="text_box">#휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈 #블랙코디 #휴먼메이드 #humanmade
-                                            #supreme #travisscottjordan1 #stussy #porter</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="feed_card">
-                                <a href="#">
-                                    <div class="social_img_box">
-                                        <img src="./img/sub/review/4.png" alt="">
-                                    </div>
-                                    <div class="card_detail">
-                                        <div class="user_box">
-                                            <div class="profile_box">
-                                                <img src="./img/sub/review/4.4.webp" alt="" class="img_profile">
-                                            </div>
-                                            <p class="user_name">junn2</p>
-                                            <span class="btn_like">
-                                                <img src="./img/sub/like.png" alt="">
-                                                <span class="like_count">21</span>
-                                            </span>
-                                        </div>
-                                        <p class="text_box">#휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈 #블랙코디 #휴먼메이드 #humanmade
-                                            #supreme #travisscottjordan1 #stussy #porter</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="feed_card">
-                                <a href="#">
-                                    <div class="social_img_box">
-                                        <img src="./img/sub/review/4.png" alt="">
-                                    </div>
-                                    <div class="card_detail">
-                                        <div class="user_box">
-                                            <div class="profile_box">
-                                                <img src="./img/sub/review/4.4.webp" alt="" class="img_profile">
-                                            </div>
-                                            <p class="user_name">junn2</p>
-                                            <span class="btn_like">
-                                                <img src="./img/sub/like.png" alt="">
-                                                <span class="like_count">21</span>
-                                            </span>
-                                        </div>
-                                        <p class="text_box">#휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈 #블랙코디 #휴먼메이드 #humanmade
-                                            #supreme #travisscottjordan1 #stussy #porter</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="feed_card">
-                                <a href="#">
-                                    <div class="social_img_box">
-                                        <img src="./img/sub/review/4.png" alt="">
-                                    </div>
-                                    <div class="card_detail">
-                                        <div class="user_box">
-                                            <div class="profile_box">
-                                                <img src="./img/sub/review/4.4.webp" alt="" class="img_profile">
-                                            </div>
-                                            <p class="user_name">junn2</p>
-                                            <span class="btn_like">
-                                                <img src="./img/sub/like.png" alt="">
-                                                <span class="like_count">21</span>
-                                            </span>
-                                        </div>
-                                        <p class="text_box">#휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈 #블랙코디 #휴먼메이드 #humanmade
-                                            #supreme #travisscottjordan1 #stussy #porter</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="feed_card">
-                                <a href="#">
-                                    <div class="social_img_box">
-                                        <img src="./img/sub/review/4.png" alt="">
-                                    </div>
-                                    <div class="card_detail">
-                                        <div class="user_box">
-                                            <div class="profile_box">
-                                                <img src="./img/sub/review/4.4.webp" alt="" class="img_profile">
-                                            </div>
-                                            <p class="user_name">junn2</p>
-                                            <span class="btn_like">
-                                                <img src="./img/sub/like.png" alt="">
-                                                <span class="like_count">21</span>
-                                            </span>
-                                        </div>
-                                        <p class="text_box">#휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈 #블랙코디 #휴먼메이드 #humanmade
-                                            #supreme #travisscottjordan1 #stussy #porter</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="more_btn_box">
-                            <button class="btn_more"> 더보기 </button>
-                        </div>
+                    <div class="product_price">
+                      <p class="discount_price">
+                        <span class="amount">1,599,000</span>
+                        <span class="won">원</span>
+                      </p>
+                      <p class="price_desc">95점 구매가</p>
                     </div>
-                </div>
-                <div class="normal_exhibitions">
-                    <div class="detail_exhibition_wrap">
-                        <div class="detail_item_title_box">
-                            <p class="detail_item_title"> 관련 기획전 </p>
-                        </div>
-                        <div class="detail_exhibitions"></div>
-                        <div class="detail_exhibitions"></div>
-                        <div class="detail_exhibitions"></div>
-                        <div class="detail_exhibitions"></div>
-                        <div class="detail_exhibitions"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="stock_list_item">
+                <a href="#" class="item_inner">
+                  <div class="product_thumb">
+                    <img src="./img/sub/stock.webp" alt="" />
+                  </div>
+                  <div class="product_info">
+                    <div class="product_detail">
+                      <p class="size">270</p>
+                      <p class="name">
+                        Jordan 1 x Travis Scott Retro Low OG SP Sail and
+                        Ridgerock
+                      </p>
+                      <span class="express_mark">빠른배송</span>
                     </div>
-                </div>
-                <div class="other_product_area">
-                    <h3 class="more_title">
-                        <img src="./img/sub/quick.png" alt="">
-                        <span class="owner">빠른배송 추천 상품</span>
-                        <a href="#" class="btn_more"><span class="btn_txt">더보기</span></a>
-                    </h3>
-                    <div class="other_products">
-                        <div class="product_list">
-                            <div class="stock_list_item stock2"></div>
-                            <div class="stock_list_item stock2"></div>
-                            <div class="stock_list_item stock2"></div>
-                            <div class="stock_list_item stock2"></div>
-                            <div class="stock_list_item stock2"></div>
-                            <div class="stock_list_item stock2"></div>
-                            <div class="stock_list_item stock2"></div>
-                            <div class="stock_list_item stock2"></div>
-                            <div class="stock_list_item stock2"></div>
-                            <div class="stock_list_item stock2"></div>
-                        </div>
+                    <div class="product_price">
+                      <p class="discount_price">
+                        <span class="amount">1,599,000</span>
+                        <span class="won">원</span>
+                      </p>
+                      <p class="price_desc">95점 구매가</p>
                     </div>
-                </div>
-                <div class="other_product_area">
-                    <h3 class="more_title">
-                        <span class="owner">Jordan의 다른 상품</span>
-                        <a href="#" class="btn_more"><span class="btn_txt">더보기</span></a>
-                    </h3>
-                    <div class="other_products">
-                        <div class="product_list">
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/dior.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Dior High OG</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">8,900,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                  </div>
+                </a>
+              </div>
+              <div class="stock_list_item">
+                <a href="#" class="item_inner">
+                  <div class="product_thumb">
+                    <img src="./img/sub/stock.webp" alt="" />
+                  </div>
+                  <div class="product_info">
+                    <div class="product_detail">
+                      <p class="size">270</p>
+                      <p class="name">
+                        Jordan 1 x Travis Scott Retro Low OG SP Sail and
+                        Ridgerock
+                      </p>
+                      <span class="express_mark">빠른배송</span>
                     </div>
-                </div>
-                <div class="other_product_area">
-                    <h3 class="more_title">
-                        <span class="owner">함께 본 상품</span>
-                    </h3>
-                    <div class="other_products">
-                        <div class="product_list">
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="stock_list_item">
-                                <a href="#" class="item_inner">
-                                    <div class="product_thumb">
-                                        <img src="./img/sub/scott.webp" alt="">
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_detail">
-                                            <p class="size"> Jordan </p>
-                                            <p class="name">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military
-                                                Blue</p>
-                                            <p class="translated_name">조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP 밀리터리 블루</p>
-                                            <span class="express_mark">빠른배송</span>
-                                        </div>
-                                        <div class="product_price">
-                                            <p class="discount_price">
-                                                <span class="amount">1,382,000</span>
-                                                <span class="won">원</span>
-                                            </p>
-                                            <p class="price_desc">즉시 구매가</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="action_wish_review">
-                                    <span class="wish_figure">
-                                        <span class="btn_wish">
-                                            <img src="./img/sub/bookmark.png" alt="">
-                                        </span>
-                                        <span class="text">3.6만</span>
-                                    </span>
-                                    <span class="review_figure">
-                                        <span class="review_link">
-                                            <img src="./img/sub/review.png" alt="">
-                                        </span>
-                                        <span class="text">7,938</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="product_price">
+                      <p class="discount_price">
+                        <span class="amount">1,599,000</span>
+                        <span class="won">원</span>
+                      </p>
+                      <p class="price_desc">95점 구매가</p>
                     </div>
-                </div>
+                  </div>
+                </a>
+              </div>
+              <div class="stock_list_item">
+                <a href="#" class="item_inner">
+                  <div class="product_thumb">
+                    <img src="./img/sub/stock.webp" alt="" />
+                  </div>
+                  <div class="product_info">
+                    <div class="product_detail">
+                      <p class="size">270</p>
+                      <p class="name">
+                        Jordan 1 x Travis Scott Retro Low OG SP Sail and
+                        Ridgerock
+                      </p>
+                      <span class="express_mark">빠른배송</span>
+                    </div>
+                    <div class="product_price">
+                      <p class="discount_price">
+                        <span class="amount">1,599,000</span>
+                        <span class="won">원</span>
+                      </p>
+                      <p class="price_desc">95점 구매가</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="stock_list_item">
+                <a href="#" class="item_inner">
+                  <div class="product_thumb">
+                    <img src="./img/sub/stock.webp" alt="" />
+                  </div>
+                  <div class="product_info">
+                    <div class="product_detail">
+                      <p class="size">270</p>
+                      <p class="name">
+                        Jordan 1 x Travis Scott Retro Low OG SP Sail and
+                        Ridgerock
+                      </p>
+                      <span class="express_mark">빠른배송</span>
+                    </div>
+                    <div class="product_price">
+                      <p class="discount_price">
+                        <span class="amount">1,599,000</span>
+                        <span class="won">원</span>
+                      </p>
+                      <p class="price_desc">95점 구매가</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="stock_list_item">
+                <a href="#" class="item_inner">
+                  <div class="product_thumb">
+                    <img src="./img/sub/stock.webp" alt="" />
+                  </div>
+                  <div class="product_info">
+                    <div class="product_detail">
+                      <p class="size">270</p>
+                      <p class="name">
+                        Jordan 1 x Travis Scott Retro Low OG SP Sail and
+                        Ridgerock
+                      </p>
+                      <span class="express_mark">빠른배송</span>
+                    </div>
+                    <div class="product_price">
+                      <p class="discount_price">
+                        <span class="amount">1,599,000</span>
+                        <span class="won">원</span>
+                      </p>
+                      <p class="price_desc">95점 구매가</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="stock_list_item">
+                <a href="#" class="item_inner">
+                  <div class="product_thumb">
+                    <img src="./img/sub/stock.webp" alt="" />
+                  </div>
+                  <div class="product_info">
+                    <div class="product_detail">
+                      <p class="size">270</p>
+                      <p class="name">
+                        Jordan 1 x Travis Scott Retro Low OG SP Sail and
+                        Ridgerock
+                      </p>
+                      <span class="express_mark">빠른배송</span>
+                    </div>
+                    <div class="product_price">
+                      <p class="discount_price">
+                        <span class="amount">1,599,000</span>
+                        <span class="won">원</span>
+                      </p>
+                      <p class="price_desc">95점 구매가</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="feed_area">
+            <h3 class="more_title">
+              <span class="title_txt">스타일 2745</span>
+            </h3>
+            <div class="social_feeds">
+              <div class="masonry_feed">
+                <div class="feed_card">
+                  <a href="#">
+                    <div class="social_img_box">
+                      <img src="./img/sub/review/1.png" alt="" />
+                    </div>
+                    <div class="card_detail">
+                      <div class="user_box">
+                        <div class="profile_box">
+                          <img
+                            src="./img/sub/review/1.1.png"
+                            alt=""
+                            class="img_profile"
+                          />
+                        </div>
+                        <p class="user_name">9z7290</p>
+                        <span class="btn_like">
+                          <img src="./img/sub/like.png" alt="" />
+                          <span class="like_count">14</span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="feed_card">
+                  <a href="#">
+                    <div class="social_img_box">
+                      <img src="./img/sub/review/2.png" alt="" />
+                    </div>
+                    <div class="card_detail">
+                      <div class="user_box">
+                        <div class="profile_box">
+                          <img
+                            src="./img/sub/review/2.2.webp"
+                            alt=""
+                            class="img_profile"
+                          />
+                        </div>
+                        <p class="user_name">easy_won</p>
+                        <span class="btn_like">
+                          <img src="./img/sub/like.png" alt="" />
+                          <span class="like_count">22</span>
+                        </span>
+                      </div>
+                      <p class="text_box">돈값하는 최애 코디2</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="feed_card">
+                  <a href="#">
+                    <div class="social_img_box">
+                      <img src="./img/sub/review/3.png" alt="" />
+                    </div>
+                    <div class="card_detail">
+                      <div class="user_box">
+                        <div class="profile_box">
+                          <img
+                            src="./img/sub/review/3.3.webp"
+                            alt=""
+                            class="img_profile"
+                          />
+                        </div>
+                        <p class="user_name">jjjjun.h</p>
+                        <span class="btn_like">
+                          <img src="./img/sub/like.png" alt="" />
+                          <span class="like_count">29</span>
+                        </span>
+                      </div>
+                      <p class="text_box">
+                        #휴가코디 #썸머스타일 #outfit #오늘뭐신지 #폭염패션
+                        #캐피탈
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="feed_card">
+                  <a href="#">
+                    <div class="social_img_box">
+                      <img src="./img/sub/review/4.png" alt="" />
+                    </div>
+                    <div class="card_detail">
+                      <div class="user_box">
+                        <div class="profile_box">
+                          <img
+                            src="./img/sub/review/4.4.webp"
+                            alt=""
+                            class="img_profile"
+                          />
+                        </div>
+                        <p class="user_name">junn2</p>
+                        <span class="btn_like">
+                          <img src="./img/sub/like.png" alt="" />
+                          <span class="like_count">21</span>
+                        </span>
+                      </div>
+                      <p class="text_box">
+                        #휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈
+                        #블랙코디 #휴먼메이드 #humanmade #supreme
+                        #travisscottjordan1 #stussy #porter
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="feed_card">
+                  <a href="#">
+                    <div class="social_img_box">
+                      <img src="./img/sub/review/4.png" alt="" />
+                    </div>
+                    <div class="card_detail">
+                      <div class="user_box">
+                        <div class="profile_box">
+                          <img
+                            src="./img/sub/review/4.4.webp"
+                            alt=""
+                            class="img_profile"
+                          />
+                        </div>
+                        <p class="user_name">junn2</p>
+                        <span class="btn_like">
+                          <img src="./img/sub/like.png" alt="" />
+                          <span class="like_count">21</span>
+                        </span>
+                      </div>
+                      <p class="text_box">
+                        #휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈
+                        #블랙코디 #휴먼메이드 #humanmade #supreme
+                        #travisscottjordan1 #stussy #porter
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="feed_card">
+                  <a href="#">
+                    <div class="social_img_box">
+                      <img src="./img/sub/review/4.png" alt="" />
+                    </div>
+                    <div class="card_detail">
+                      <div class="user_box">
+                        <div class="profile_box">
+                          <img
+                            src="./img/sub/review/4.4.webp"
+                            alt=""
+                            class="img_profile"
+                          />
+                        </div>
+                        <p class="user_name">junn2</p>
+                        <span class="btn_like">
+                          <img src="./img/sub/like.png" alt="" />
+                          <span class="like_count">21</span>
+                        </span>
+                      </div>
+                      <p class="text_box">
+                        #휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈
+                        #블랙코디 #휴먼메이드 #humanmade #supreme
+                        #travisscottjordan1 #stussy #porter
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="feed_card">
+                  <a href="#">
+                    <div class="social_img_box">
+                      <img src="./img/sub/review/4.png" alt="" />
+                    </div>
+                    <div class="card_detail">
+                      <div class="user_box">
+                        <div class="profile_box">
+                          <img
+                            src="./img/sub/review/4.4.webp"
+                            alt=""
+                            class="img_profile"
+                          />
+                        </div>
+                        <p class="user_name">junn2</p>
+                        <span class="btn_like">
+                          <img src="./img/sub/like.png" alt="" />
+                          <span class="like_count">21</span>
+                        </span>
+                      </div>
+                      <p class="text_box">
+                        #휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈
+                        #블랙코디 #휴먼메이드 #humanmade #supreme
+                        #travisscottjordan1 #stussy #porter
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="feed_card">
+                  <a href="#">
+                    <div class="social_img_box">
+                      <img src="./img/sub/review/4.png" alt="" />
+                    </div>
+                    <div class="card_detail">
+                      <div class="user_box">
+                        <div class="profile_box">
+                          <img
+                            src="./img/sub/review/4.4.webp"
+                            alt=""
+                            class="img_profile"
+                          />
+                        </div>
+                        <p class="user_name">junn2</p>
+                        <span class="btn_like">
+                          <img src="./img/sub/like.png" alt="" />
+                          <span class="like_count">21</span>
+                        </span>
+                      </div>
+                      <p class="text_box">
+                        #휴가코디 #썸머스타일 #outfit #폭염패션 #스니커즈
+                        #블랙코디 #휴먼메이드 #humanmade #supreme
+                        #travisscottjordan1 #stussy #porter
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="more_btn_box">
+                <button class="btn_more">더보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="normal_exhibitions">
+            <div class="detail_exhibition_wrap">
+              <div class="detail_item_title_box">
+                <p class="detail_item_title">관련 기획전</p>
+              </div>
+              <div class="detail_exhibitions"></div>
+              <div class="detail_exhibitions"></div>
+              <div class="detail_exhibitions"></div>
+              <div class="detail_exhibitions"></div>
+              <div class="detail_exhibitions"></div>
+            </div>
+          </div>
+          <div class="other_product_area">
+            <h3 class="more_title">
+              <img src="./img/sub/quick.png" alt="" />
+              <span class="owner">빠른배송 추천 상품</span>
+              <a href="#" class="btn_more"
+                ><span class="btn_txt">더보기</span></a
+              >
+            </h3>
+            <div class="other_products">
+              <div class="product_list">
+                <div class="stock_list_item stock2"></div>
+                <div class="stock_list_item stock2"></div>
+                <div class="stock_list_item stock2"></div>
+                <div class="stock_list_item stock2"></div>
+                <div class="stock_list_item stock2"></div>
+                <div class="stock_list_item stock2"></div>
+                <div class="stock_list_item stock2"></div>
+                <div class="stock_list_item stock2"></div>
+                <div class="stock_list_item stock2"></div>
+                <div class="stock_list_item stock2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="other_product_area">
+            <h3 class="more_title">
+              <span class="owner">Jordan의 다른 상품</span>
+              <a href="#" class="btn_more"
+                ><span class="btn_txt">더보기</span></a
+              >
+            </h3>
+            <div class="other_products">
+              <div class="product_list">
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/dior.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">Jordan 1 x Dior High OG</p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">8,900,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="other_product_area">
+            <h3 class="more_title">
+              <span class="owner">함께 본 상품</span>
+            </h3>
+            <div class="other_products">
+              <div class="product_list">
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="stock_list_item">
+                  <a href="#" class="item_inner">
+                    <div class="product_thumb">
+                      <img src="./img/sub/scott.webp" alt="" />
+                    </div>
+                    <div class="product_info">
+                      <div class="product_detail">
+                        <p class="size">Jordan</p>
+                        <p class="name">
+                          Jordan 1 x Travis Scott x Fragment Retro Low OG SP
+                          Military Blue
+                        </p>
+                        <p class="translated_name">
+                          조던 1 x 트래비스 스캇 x 프라그먼트 레트로 로우 OG SP
+                          밀리터리 블루
+                        </p>
+                        <span class="express_mark">빠른배송</span>
+                      </div>
+                      <div class="product_price">
+                        <p class="discount_price">
+                          <span class="amount">1,382,000</span>
+                          <span class="won">원</span>
+                        </p>
+                        <p class="price_desc">즉시 구매가</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="action_wish_review">
+                    <span class="wish_figure">
+                      <span class="btn_wish">
+                        <img src="./img/sub/bookmark.png" alt="" />
+                      </span>
+                      <span class="text">3.6만</span>
+                    </span>
+                    <span class="review_figure">
+                      <span class="review_link">
+                        <img src="./img/sub/review.png" alt="" />
+                      </span>
+                      <span class="text">7,938</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
     </div>
     <div class="footer">
-        <div class="footer_inner">
-            <div class="service_area">
-                <div class="footer_menu">
-                    <div class="menu_box">
-                        <strong class="menu_title">이용안내</strong>
-                        <ul class="menu_list">
-                            <li class="menu_item"><a href="#" class="menu_link">검수기준</a></li>
-                            <li class="menu_item"><a href="#" class="menu_link">이용정책</a></li>
-                            <li class="menu_item"><a href="#" class="menu_link">페널티 정책</a></li>
-                            <li class="menu_item"><a href="#" class="menu_link">커뮤니티 가이드라인</a></li>
-                    </div>
-                    <div class="menu_box" style="margin-left: 80px;">
-                        <strong class="menu_title">고객지원</strong>
-                        <ul class="menu_list">
-                            <li class="menu_item"><a href="#" class="menu_link">공지사항</a></li>
-                            <li class="menu_item"><a href="#" class="menu_link">서비스 소개</a></li>
-                            <li class="menu_item"><a href="#" class="menu_link">스토어 안내</a></li>
-                            <li class="menu_item"><a href="#" class="menu_link">판매자 방문접수</a></li>
-                    </div>
-                </div>
-                <div class="customer_service">
-                    <strong class="service_title">고객센터<a href="#" class="service_tel">1588-7813</a></strong>
-                    <div class="service_time">
-                        <dl class="time_box">
-                            <dt class="time_term">운영시간 평일 11:00 - 18:00 (토∙일, 공휴일 휴무)
-                                점심시간 평일 13:00 - 14:00</dt>
-                        </dl>
-                    </div>
-                    <p class="service_noti">1:1 문의하기는 앱에서만 가능합니다.</p>
-                    <div class="service_btn_box">
-                        <a href="#" class="btn">자주 묻는 질문</a>
-                    </div>
-                </div>
+      <div class="footer_inner">
+        <div class="service_area">
+          <div class="footer_menu">
+            <div class="menu_box">
+              <strong class="menu_title">이용안내</strong>
+              <ul class="menu_list">
+                <li class="menu_item">
+                  <a href="#" class="menu_link">검수기준</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">이용정책</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">페널티 정책</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">커뮤니티 가이드라인</a>
+                </li>
+              </ul>
             </div>
-            <div class="corporation_area">
-                <ul class="term_list">
-                    <li class="term_item"><a href="#" class="term_link">회사소개</a></li>
-                    <li class="term_item"><a href="#" class="term_link">인재채용</a></li>
-                    <li class="term_item"><a href="#" class="term_link">제휴제안</a></li>
-                    <li class="term_item"><a href="#" class="term_link">이용약관</a></li>
-                    <li class="term_item"><a href="#" class="term_link" style="font-weight: 700;">개인정보처리방침</a></li>
-                </ul>
-                <div class="footer_sns">
-                    <a href="#" class="sns"><img src="./img/footer/insta.png" alt="insta" class="icon"></a>
-                    <a href="#" class="sns"><img src="./img/footer/facebook.png" alt="facebook" class="icon"></a>
-                    <a href="#" class="sns"><img src="./img/footer/kakotalk.png" alt="kakotalk" class="icon"></a>
-                </div>
-                <div class="business_info">
-                    <dl class="info_item">
-                        <dt class="business_title">크림 주식회사 · 대표 김창욱
-                            <span class="blank"></span>
-                            사업자등록번호 : 570-88-01618
-                            <a href="#">사업자정보확인</a>
-                            <span class="blank"></span>
-                            통신판매업 : 제 2021-성남분당C-0093호
-                            <span class="blank"></span>
-                            사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 8층
-                            <span class="blank"></span>
-                            호스팅 서비스 : 네이버 클라우드 ㈜
-                        </dt>
-                    </dl>
-                </div>
+            <div class="menu_box" style="margin-left: 80px">
+              <strong class="menu_title">고객지원</strong>
+              <ul class="menu_list">
+                <li class="menu_item">
+                  <a href="#" class="menu_link">공지사항</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">서비스 소개</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">스토어 안내</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">판매자 방문접수</a>
+                </li>
+              </ul>
             </div>
-            <div class="notice_guarantee">
-                <p class="title">신한은행 채무지급보증 안내</p>
-                <p class="description"> 당사는 고객님의 현금 결제 금액에 대해 신한은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.<a href="#">서비스가입 사실
-                        확인</a>
-                </p>
+          </div>
+          <div class="customer_service">
+            <strong class="service_title"
+              >고객센터<a href="#" class="service_tel">1588-7813</a></strong
+            >
+            <div class="service_time">
+              <dl class="time_box">
+                <dt class="time_term">
+                  운영시간 평일 11:00 - 18:00 (토∙일, 공휴일 휴무) 점심시간 평일
+                  13:00 - 14:00
+                </dt>
+              </dl>
             </div>
-            <div class="notice_area">
-                <p class="notice">크림(주)는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 본 상품은 개별판매자가 등록한 상품으로 상품, 상품정보, 거래에 관한 의무와 책임은 각
-                    판매자에게
-                    있습니다. 단, 이용약관 및 정책, 기타 거래 체결 과정에서 고지하는 내용 등에 따라 검수하고 보증하는 내용에 대한 책임은 크림(주)에 있습니다.</p>
-                <p class="copyright">© KREAM Corp.</p>
+            <p class="service_noti">1:1 문의하기는 앱에서만 가능합니다.</p>
+            <div class="service_btn_box">
+              <a href="#" class="btn">자주 묻는 질문</a>
             </div>
+          </div>
         </div>
+        <div class="corporation_area">
+          <ul class="term_list">
+            <li class="term_item">
+              <a href="#" class="term_link">회사소개</a>
+            </li>
+            <li class="term_item">
+              <a href="#" class="term_link">인재채용</a>
+            </li>
+            <li class="term_item">
+              <a href="#" class="term_link">제휴제안</a>
+            </li>
+            <li class="term_item">
+              <a href="#" class="term_link">이용약관</a>
+            </li>
+            <li class="term_item">
+              <a href="#" class="term_link" style="font-weight: 700"
+                >개인정보처리방침</a
+              >
+            </li>
+          </ul>
+          <div class="footer_sns">
+            <a href="#" class="sns"
+              ><img src="./img/footer/insta.png" alt="insta" class="icon"
+            /></a>
+            <a href="#" class="sns"
+              ><img src="./img/footer/facebook.png" alt="facebook" class="icon"
+            /></a>
+            <a href="#" class="sns"
+              ><img src="./img/footer/kakotalk.png" alt="kakotalk" class="icon"
+            /></a>
+          </div>
+          <div class="business_info">
+            <dl class="info_item">
+              <dt class="business_title">
+                크림 주식회사 · 대표 김창욱
+                <span class="blank"></span>
+                사업자등록번호 : 570-88-01618
+                <a href="#">사업자정보확인</a>
+                <span class="blank"></span>
+                통신판매업 : 제 2021-성남분당C-0093호
+                <span class="blank"></span>
+                사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원
+                타워1, 8층
+                <span class="blank"></span>
+                호스팅 서비스 : 네이버 클라우드 ㈜
+              </dt>
+            </dl>
+          </div>
+        </div>
+        <div class="notice_guarantee">
+          <p class="title">신한은행 채무지급보증 안내</p>
+          <p class="description">
+            당사는 고객님의 현금 결제 금액에 대해 신한은행과 채무지급보증 계약을
+            체결하여 안전거래를 보장하고 있습니다.<a href="#"
+              >서비스가입 사실 확인</a
+            >
+          </p>
+        </div>
+        <div class="notice_area">
+          <p class="notice">
+            크림(주)는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 본
+            상품은 개별판매자가 등록한 상품으로 상품, 상품정보, 거래에 관한
+            의무와 책임은 각 판매자에게 있습니다. 단, 이용약관 및 정책, 기타
+            거래 체결 과정에서 고지하는 내용 등에 따라 검수하고 보증하는 내용에
+            대한 책임은 크림(주)에 있습니다.
+          </p>
+          <p class="copyright">© KREAM Corp.</p>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
